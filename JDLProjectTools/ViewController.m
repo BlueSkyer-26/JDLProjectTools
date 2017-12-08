@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"孔啦啦啦啦");
+    NSLog(@"搜索");
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B8EE81D8A3CD0E5494EAB41 /* libPods-JDLProjectTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 133FB68D3277D1CF8B35FD6D /* libPods-JDLProjectTools.a */; };
 		8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */; };
 		8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B47D1FDAD9CE00DBCBCF /* ViewController.m */; };
 		8212B4811FDAD9CE00DBCBCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8212B47F1FDAD9CE00DBCBCF /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133FB68D3277D1CF8B35FD6D /* libPods-JDLProjectTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDLProjectTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5D872FD0BB7C4EC2563A8B /* Pods-JDLProjectTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLProjectTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDLProjectTools/Pods-JDLProjectTools.debug.xcconfig"; sourceTree = "<group>"; };
+		799B371B6FD615AA998852AD /* Pods-JDLProjectTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLProjectTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDLProjectTools/Pods-JDLProjectTools.release.xcconfig"; sourceTree = "<group>"; };
 		8212B4761FDAD9CE00DBCBCF /* JDLProjectTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDLProjectTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8212B4791FDAD9CE00DBCBCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8EE81D8A3CD0E5494EAB41 /* libPods-JDLProjectTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B6F866EB007B8F4A720EAA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F5D872FD0BB7C4EC2563A8B /* Pods-JDLProjectTools.debug.xcconfig */,
+				799B371B6FD615AA998852AD /* Pods-JDLProjectTools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8212B46D1FDAD9CE00DBCBCF = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				8212B4911FDAD9CE00DBCBCF /* JDLProjectToolsTests */,
 				8212B49C1FDAD9CE00DBCBCF /* JDLProjectToolsUITests */,
 				8212B4771FDAD9CE00DBCBCF /* Products */,
+				1B6F866EB007B8F4A720EAA2 /* Pods */,
+				88BB3892BD6F1DA5B50E8C0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,14 @@
 			path = JDLProjectToolsUITests;
 			sourceTree = "<group>";
 		};
+		88BB3892BD6F1DA5B50E8C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				133FB68D3277D1CF8B35FD6D /* libPods-JDLProjectTools.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8212B4A21FDAD9CE00DBCBCF /* Build configuration list for PBXNativeTarget "JDLProjectTools" */;
 			buildPhases = (
+				AADA6C5DC4E3FA235DDEF094 /* [CP] Check Pods Manifest.lock */,
 				8212B4721FDAD9CE00DBCBCF /* Sources */,
 				8212B4731FDAD9CE00DBCBCF /* Frameworks */,
 				8212B4741FDAD9CE00DBCBCF /* Resources */,
+				68F3E94467DB0A9BF24CCE27 /* [CP] Embed Pods Frameworks */,
+				206C87CFB097ED51D935E2E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		206C87CFB097ED51D935E2E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDLProjectTools/Pods-JDLProjectTools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68F3E94467DB0A9BF24CCE27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDLProjectTools/Pods-JDLProjectTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AADA6C5DC4E3FA235DDEF094 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8212B4721FDAD9CE00DBCBCF /* Sources */ = {
@@ -428,6 +503,7 @@
 		};
 		8212B4A31FDAD9CE00DBCBCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F5D872FD0BB7C4EC2563A8B /* Pods-JDLProjectTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +518,7 @@
 		};
 		8212B4A41FDAD9CE00DBCBCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799B371B6FD615AA998852AD /* Pods-JDLProjectTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
