@@ -1,0 +1,21 @@
+//
+//  JDLToolsPrefixHeader.pch
+//  JDLProjectTools
+//
+//  Created by 胜炫电子 on 2017/12/10.
+//  Copyright © 2017年 BlueSkyer-25. All rights reserved.
+//
+
+#ifndef JDLToolsPrefixHeader_pch
+#define JDLToolsPrefixHeader_pch
+
+#import "JDLAllCommonClass.h"
+
+#pragma mark ------ JDLLog -------
+#ifdef DEBUG
+#define JDLLog(FORMAT, ...) fprintf(stderr, "%s   方法名为:%s   第%zd行\t%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __PRETTY_FUNCTION__, __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+#else
+#define JDLLog(FORMAT, ...) nil
+#endif
+
+#endif /* JDLToolsPrefixHeader_pch */

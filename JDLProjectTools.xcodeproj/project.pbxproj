@@ -16,6 +16,8 @@
 		8212B4891FDAD9CE00DBCBCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4881FDAD9CE00DBCBCF /* main.m */; };
 		8212B4931FDAD9CE00DBCBCF /* JDLProjectToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4921FDAD9CE00DBCBCF /* JDLProjectToolsTests.m */; };
 		8212B49E1FDAD9CE00DBCBCF /* JDLProjectToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B49D1FDAD9CE00DBCBCF /* JDLProjectToolsUITests.m */; };
+		8212B4B11FDD109D00DBCBCF /* JDLPopContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4B01FDD109D00DBCBCF /* JDLPopContentManager.m */; };
+		8212B4B51FDD128900DBCBCF /* JDLHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4B41FDD128900DBCBCF /* JDLHeadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,13 @@
 		8212B4991FDAD9CE00DBCBCF /* JDLProjectToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDLProjectToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8212B49D1FDAD9CE00DBCBCF /* JDLProjectToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLProjectToolsUITests.m; sourceTree = "<group>"; };
 		8212B49F1FDAD9CE00DBCBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8212B4AC1FDD0EB300DBCBCF /* JDLToolsPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLToolsPrefixHeader.pch; sourceTree = "<group>"; };
+		8212B4AD1FDD0F0800DBCBCF /* JDLAllCommonClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLAllCommonClass.h; sourceTree = "<group>"; };
+		8212B4AF1FDD109D00DBCBCF /* JDLPopContentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPopContentManager.h; sourceTree = "<group>"; };
+		8212B4B01FDD109D00DBCBCF /* JDLPopContentManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLPopContentManager.m; sourceTree = "<group>"; };
+		8212B4B31FDD128900DBCBCF /* JDLHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLHeadView.h; sourceTree = "<group>"; };
+		8212B4B41FDD128900DBCBCF /* JDLHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLHeadView.m; sourceTree = "<group>"; };
+		8212B4B61FDD14C600DBCBCF /* JDLProjectConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLProjectConfiguration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,9 @@
 		8212B4781FDAD9CE00DBCBCF /* JDLProjectTools */ = {
 			isa = PBXGroup;
 			children = (
+				8212B4B21FDD126A00DBCBCF /* ProjectClass */,
+				8212B4AE1FDD0FD200DBCBCF /* ProjectManager */,
+				8212B4AB1FDD0EA200DBCBCF /* Common */,
 				8212B4791FDAD9CE00DBCBCF /* AppDelegate.h */,
 				8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */,
 				8212B47C1FDAD9CE00DBCBCF /* ViewController.h */,
@@ -146,6 +158,34 @@
 				8212B49F1FDAD9CE00DBCBCF /* Info.plist */,
 			);
 			path = JDLProjectToolsUITests;
+			sourceTree = "<group>";
+		};
+		8212B4AB1FDD0EA200DBCBCF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4AC1FDD0EB300DBCBCF /* JDLToolsPrefixHeader.pch */,
+				8212B4B61FDD14C600DBCBCF /* JDLProjectConfiguration.h */,
+				8212B4AD1FDD0F0800DBCBCF /* JDLAllCommonClass.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8212B4AE1FDD0FD200DBCBCF /* ProjectManager */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4AF1FDD109D00DBCBCF /* JDLPopContentManager.h */,
+				8212B4B01FDD109D00DBCBCF /* JDLPopContentManager.m */,
+			);
+			path = ProjectManager;
+			sourceTree = "<group>";
+		};
+		8212B4B21FDD126A00DBCBCF /* ProjectClass */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4B31FDD128900DBCBCF /* JDLHeadView.h */,
+				8212B4B41FDD128900DBCBCF /* JDLHeadView.m */,
+			);
+			path = ProjectClass;
 			sourceTree = "<group>";
 		};
 		88BB3892BD6F1DA5B50E8C0D /* Frameworks */ = {
@@ -221,6 +261,7 @@
 		8212B46E1FDAD9CE00DBCBCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JDL;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "BlueSkyer-25";
 				TargetAttributes = {
@@ -340,6 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8212B4B51FDD128900DBCBCF /* JDLHeadView.m in Sources */,
+				8212B4B11FDD109D00DBCBCF /* JDLPopContentManager.m in Sources */,
 				8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */,
 				8212B4891FDAD9CE00DBCBCF /* main.m in Sources */,
 				8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */,
@@ -506,9 +549,13 @@
 			baseConfigurationReference = 3F5D872FD0BB7C4EC2563A8B /* Pods-JDLProjectTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EVKP6X2HVB;
+				DEVELOPMENT_TEAM = P9TSVR4F6P;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JDLProjectTools/Common/JDLToolsPrefixHeader.pch;
 				INFOPLIST_FILE = JDLProjectTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leguan.JDLProjectTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,9 +568,13 @@
 			baseConfigurationReference = 799B371B6FD615AA998852AD /* Pods-JDLProjectTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EVKP6X2HVB;
+				DEVELOPMENT_TEAM = P9TSVR4F6P;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JDLProjectTools/Common/JDLToolsPrefixHeader.pch;
 				INFOPLIST_FILE = JDLProjectTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leguan.JDLProjectTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
