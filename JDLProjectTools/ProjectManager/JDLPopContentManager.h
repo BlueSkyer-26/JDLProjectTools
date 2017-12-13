@@ -19,3 +19,12 @@
 +(KLCPopup *)showPopContentViewBottom:(UIView *)contentView;
 
 @end
+
+//示例
+//        JDLHeadView *view =[[JDLHeadView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight -200)];
+//
+//        KLCPopup *popView =[JDLPopContentManager showPopContentViewBottom:view];
+//        view.clickViewBlock = ^(NSString *str) {
+//
+//            [popView dismiss:YES];
+//        };

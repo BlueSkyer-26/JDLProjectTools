@@ -17,7 +17,23 @@
 		8212B4931FDAD9CE00DBCBCF /* JDLProjectToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4921FDAD9CE00DBCBCF /* JDLProjectToolsTests.m */; };
 		8212B49E1FDAD9CE00DBCBCF /* JDLProjectToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B49D1FDAD9CE00DBCBCF /* JDLProjectToolsUITests.m */; };
 		8212B4B11FDD109D00DBCBCF /* JDLPopContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4B01FDD109D00DBCBCF /* JDLPopContentManager.m */; };
-		8212B4B51FDD128900DBCBCF /* JDLHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4B41FDD128900DBCBCF /* JDLHeadView.m */; };
+		8212B4BA1FDD3DA800DBCBCF /* JDLToolsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4B91FDD3DA800DBCBCF /* JDLToolsManager.m */; };
+		8212B4BD1FDD3DC500DBCBCF /* JDLUserMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4BC1FDD3DC500DBCBCF /* JDLUserMessageManager.m */; };
+		8212B4C51FDE1F9100DBCBCF /* JDLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4C41FDE1F9100DBCBCF /* JDLTabBarController.m */; };
+		8212B4C81FDE267F00DBCBCF /* JDLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4C71FDE267F00DBCBCF /* JDLMineViewController.m */; };
+		8212B4CB1FDE269000DBCBCF /* JDLMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4CA1FDE269000DBCBCF /* JDLMessageViewController.m */; };
+		8212B4CE1FDE269A00DBCBCF /* JDLFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4CD1FDE269A00DBCBCF /* JDLFoundViewController.m */; };
+		8212B4D11FDE26A400DBCBCF /* JDLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4D01FDE26A400DBCBCF /* JDLHomeViewController.m */; };
+		8212B4D51FDE2DA200DBCBCF /* JDLCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4D41FDE2DA200DBCBCF /* JDLCenterViewController.m */; };
+		8212B4DC1FDE38F600DBCBCF /* JDLHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4DA1FDE38F500DBCBCF /* JDLHeadView.m */; };
+		8212B4E01FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4DF1FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m */; };
+		8212B4E31FDE4B1B00DBCBCF /* JDLAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4E21FDE4B1B00DBCBCF /* JDLAnimationButton.m */; };
+		8212B4E71FDE517700DBCBCF /* UIButton+JDLCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4E61FDE517700DBCBCF /* UIButton+JDLCountDown.m */; };
+		8212B4EA1FDE5C6500DBCBCF /* UIButton+JDLTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4E91FDE5C6500DBCBCF /* UIButton+JDLTouch.m */; };
+		8212B4F31FDF833200DBCBCF /* UIButton+JDLLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B4F21FDF833200DBCBCF /* UIButton+JDLLayout.m */; };
+		824960CB1FE0CFD3004DF289 /* JDLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960CA1FE0CFD3004DF289 /* JDLNavigationController.m */; };
+		824960CF1FE0D8AA004DF289 /* JDLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960CE1FE0D8AA004DF289 /* JDLNavigationBar.m */; };
+		824960D21FE0D8BD004DF289 /* JDLCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960D11FE0D8BD004DF289 /* JDLCustomNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +77,41 @@
 		8212B4AD1FDD0F0800DBCBCF /* JDLAllCommonClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLAllCommonClass.h; sourceTree = "<group>"; };
 		8212B4AF1FDD109D00DBCBCF /* JDLPopContentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPopContentManager.h; sourceTree = "<group>"; };
 		8212B4B01FDD109D00DBCBCF /* JDLPopContentManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLPopContentManager.m; sourceTree = "<group>"; };
-		8212B4B31FDD128900DBCBCF /* JDLHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLHeadView.h; sourceTree = "<group>"; };
-		8212B4B41FDD128900DBCBCF /* JDLHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLHeadView.m; sourceTree = "<group>"; };
 		8212B4B61FDD14C600DBCBCF /* JDLProjectConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLProjectConfiguration.h; sourceTree = "<group>"; };
+		8212B4B81FDD3DA800DBCBCF /* JDLToolsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLToolsManager.h; sourceTree = "<group>"; };
+		8212B4B91FDD3DA800DBCBCF /* JDLToolsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLToolsManager.m; sourceTree = "<group>"; };
+		8212B4BB1FDD3DC500DBCBCF /* JDLUserMessageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLUserMessageManager.h; sourceTree = "<group>"; };
+		8212B4BC1FDD3DC500DBCBCF /* JDLUserMessageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLUserMessageManager.m; sourceTree = "<group>"; };
+		8212B4C31FDE1F9100DBCBCF /* JDLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLTabBarController.h; sourceTree = "<group>"; };
+		8212B4C41FDE1F9100DBCBCF /* JDLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLTabBarController.m; sourceTree = "<group>"; };
+		8212B4C61FDE267F00DBCBCF /* JDLMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMineViewController.h; sourceTree = "<group>"; };
+		8212B4C71FDE267F00DBCBCF /* JDLMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMineViewController.m; sourceTree = "<group>"; };
+		8212B4C91FDE269000DBCBCF /* JDLMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMessageViewController.h; sourceTree = "<group>"; };
+		8212B4CA1FDE269000DBCBCF /* JDLMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMessageViewController.m; sourceTree = "<group>"; };
+		8212B4CC1FDE269A00DBCBCF /* JDLFoundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLFoundViewController.h; sourceTree = "<group>"; };
+		8212B4CD1FDE269A00DBCBCF /* JDLFoundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLFoundViewController.m; sourceTree = "<group>"; };
+		8212B4CF1FDE26A400DBCBCF /* JDLHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLHomeViewController.h; sourceTree = "<group>"; };
+		8212B4D01FDE26A400DBCBCF /* JDLHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLHomeViewController.m; sourceTree = "<group>"; };
+		8212B4D31FDE2DA200DBCBCF /* JDLCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCenterViewController.h; sourceTree = "<group>"; };
+		8212B4D41FDE2DA200DBCBCF /* JDLCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLCenterViewController.m; sourceTree = "<group>"; };
+		8212B4DA1FDE38F500DBCBCF /* JDLHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLHeadView.m; sourceTree = "<group>"; };
+		8212B4DB1FDE38F600DBCBCF /* JDLHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLHeadView.h; sourceTree = "<group>"; };
+		8212B4DE1FDE3A5100DBCBCF /* UIButton+JDLImagePosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDLImagePosition.h"; sourceTree = "<group>"; };
+		8212B4DF1FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDLImagePosition.m"; sourceTree = "<group>"; };
+		8212B4E11FDE4B1B00DBCBCF /* JDLAnimationButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLAnimationButton.h; sourceTree = "<group>"; };
+		8212B4E21FDE4B1B00DBCBCF /* JDLAnimationButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLAnimationButton.m; sourceTree = "<group>"; };
+		8212B4E51FDE517700DBCBCF /* UIButton+JDLCountDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDLCountDown.h"; sourceTree = "<group>"; };
+		8212B4E61FDE517700DBCBCF /* UIButton+JDLCountDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDLCountDown.m"; sourceTree = "<group>"; };
+		8212B4E81FDE5C6500DBCBCF /* UIButton+JDLTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDLTouch.h"; sourceTree = "<group>"; };
+		8212B4E91FDE5C6500DBCBCF /* UIButton+JDLTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDLTouch.m"; sourceTree = "<group>"; };
+		8212B4F11FDF833200DBCBCF /* UIButton+JDLLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDLLayout.h"; sourceTree = "<group>"; };
+		8212B4F21FDF833200DBCBCF /* UIButton+JDLLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDLLayout.m"; sourceTree = "<group>"; };
+		824960C91FE0CFD3004DF289 /* JDLNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLNavigationController.h; sourceTree = "<group>"; };
+		824960CA1FE0CFD3004DF289 /* JDLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLNavigationController.m; sourceTree = "<group>"; };
+		824960CD1FE0D8AA004DF289 /* JDLNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLNavigationBar.h; sourceTree = "<group>"; };
+		824960CE1FE0D8AA004DF289 /* JDLNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLNavigationBar.m; sourceTree = "<group>"; };
+		824960D01FE0D8BD004DF289 /* JDLCustomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCustomNavigationBar.h; sourceTree = "<group>"; };
+		824960D11FE0D8BD004DF289 /* JDLCustomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLCustomNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +174,10 @@
 		8212B4781FDAD9CE00DBCBCF /* JDLProjectTools */ = {
 			isa = PBXGroup;
 			children = (
+				8212B4B71FDD35B100DBCBCF /* AppDelegate */,
 				8212B4B21FDD126A00DBCBCF /* ProjectClass */,
 				8212B4AE1FDD0FD200DBCBCF /* ProjectManager */,
 				8212B4AB1FDD0EA200DBCBCF /* Common */,
-				8212B4791FDAD9CE00DBCBCF /* AppDelegate.h */,
-				8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */,
 				8212B47C1FDAD9CE00DBCBCF /* ViewController.h */,
 				8212B47D1FDAD9CE00DBCBCF /* ViewController.m */,
 				8212B47F1FDAD9CE00DBCBCF /* Main.storyboard */,
@@ -163,6 +210,9 @@
 		8212B4AB1FDD0EA200DBCBCF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				824960CC1FE0D871004DF289 /* Navigation(自定义多样化导航栏) */,
+				8212B4E41FDE4FCF00DBCBCF /* block&delagate(例子) */,
+				8212B4DD1FDE3A1200DBCBCF /* JDLCategoryInherit(系统控件类别继承) */,
 				8212B4AC1FDD0EB300DBCBCF /* JDLToolsPrefixHeader.pch */,
 				8212B4B61FDD14C600DBCBCF /* JDLProjectConfiguration.h */,
 				8212B4AD1FDD0F0800DBCBCF /* JDLAllCommonClass.h */,
@@ -173,8 +223,12 @@
 		8212B4AE1FDD0FD200DBCBCF /* ProjectManager */ = {
 			isa = PBXGroup;
 			children = (
+				8212B4B81FDD3DA800DBCBCF /* JDLToolsManager.h */,
+				8212B4B91FDD3DA800DBCBCF /* JDLToolsManager.m */,
 				8212B4AF1FDD109D00DBCBCF /* JDLPopContentManager.h */,
 				8212B4B01FDD109D00DBCBCF /* JDLPopContentManager.m */,
+				8212B4BB1FDD3DC500DBCBCF /* JDLUserMessageManager.h */,
+				8212B4BC1FDD3DC500DBCBCF /* JDLUserMessageManager.m */,
 			);
 			path = ProjectManager;
 			sourceTree = "<group>";
@@ -182,10 +236,140 @@
 		8212B4B21FDD126A00DBCBCF /* ProjectClass */ = {
 			isa = PBXGroup;
 			children = (
-				8212B4B31FDD128900DBCBCF /* JDLHeadView.h */,
-				8212B4B41FDD128900DBCBCF /* JDLHeadView.m */,
+				8212B4D21FDE2D7300DBCBCF /* Center(中间视图-可选) */,
+				8212B4C21FDE1F5300DBCBCF /* Mine(我的) */,
+				8212B4C11FDE1F3900DBCBCF /* Message(消息) */,
+				8212B4C01FDE1F2400DBCBCF /* Found(发现) */,
+				8212B4BF1FDE1F1500DBCBCF /* Home(首页) */,
+				8212B4BE1FDE1EAD00DBCBCF /* Main */,
 			);
 			path = ProjectClass;
+			sourceTree = "<group>";
+		};
+		8212B4B71FDD35B100DBCBCF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4791FDAD9CE00DBCBCF /* AppDelegate.h */,
+				8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8212B4BE1FDE1EAD00DBCBCF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4C31FDE1F9100DBCBCF /* JDLTabBarController.h */,
+				8212B4C41FDE1F9100DBCBCF /* JDLTabBarController.m */,
+				824960C91FE0CFD3004DF289 /* JDLNavigationController.h */,
+				824960CA1FE0CFD3004DF289 /* JDLNavigationController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8212B4BF1FDE1F1500DBCBCF /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4CF1FDE26A400DBCBCF /* JDLHomeViewController.h */,
+				8212B4D01FDE26A400DBCBCF /* JDLHomeViewController.m */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		8212B4C01FDE1F2400DBCBCF /* Found(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4CC1FDE269A00DBCBCF /* JDLFoundViewController.h */,
+				8212B4CD1FDE269A00DBCBCF /* JDLFoundViewController.m */,
+			);
+			path = "Found(发现)";
+			sourceTree = "<group>";
+		};
+		8212B4C11FDE1F3900DBCBCF /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4C91FDE269000DBCBCF /* JDLMessageViewController.h */,
+				8212B4CA1FDE269000DBCBCF /* JDLMessageViewController.m */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		8212B4C21FDE1F5300DBCBCF /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4C61FDE267F00DBCBCF /* JDLMineViewController.h */,
+				8212B4C71FDE267F00DBCBCF /* JDLMineViewController.m */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		8212B4D21FDE2D7300DBCBCF /* Center(中间视图-可选) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4D31FDE2DA200DBCBCF /* JDLCenterViewController.h */,
+				8212B4D41FDE2DA200DBCBCF /* JDLCenterViewController.m */,
+			);
+			path = "Center(中间视图-可选)";
+			sourceTree = "<group>";
+		};
+		8212B4DD1FDE3A1200DBCBCF /* JDLCategoryInherit(系统控件类别继承) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4F41FDF84E100DBCBCF /* UIButton */,
+			);
+			path = "JDLCategoryInherit(系统控件类别继承)";
+			sourceTree = "<group>";
+		};
+		8212B4E41FDE4FCF00DBCBCF /* block&delagate(例子) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4DB1FDE38F600DBCBCF /* JDLHeadView.h */,
+				8212B4DA1FDE38F500DBCBCF /* JDLHeadView.m */,
+			);
+			path = "block&delagate(例子)";
+			sourceTree = "<group>";
+		};
+		8212B4F41FDF84E100DBCBCF /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4F61FDF855800DBCBCF /* ButtonInherit(继承) */,
+				8212B4F51FDF853200DBCBCF /* ButtonCategory(类别) */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		8212B4F51FDF853200DBCBCF /* ButtonCategory(类别) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4E81FDE5C6500DBCBCF /* UIButton+JDLTouch.h */,
+				8212B4E91FDE5C6500DBCBCF /* UIButton+JDLTouch.m */,
+				8212B4F11FDF833200DBCBCF /* UIButton+JDLLayout.h */,
+				8212B4F21FDF833200DBCBCF /* UIButton+JDLLayout.m */,
+				8212B4E51FDE517700DBCBCF /* UIButton+JDLCountDown.h */,
+				8212B4E61FDE517700DBCBCF /* UIButton+JDLCountDown.m */,
+				8212B4DE1FDE3A5100DBCBCF /* UIButton+JDLImagePosition.h */,
+				8212B4DF1FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m */,
+			);
+			path = "ButtonCategory(类别)";
+			sourceTree = "<group>";
+		};
+		8212B4F61FDF855800DBCBCF /* ButtonInherit(继承) */ = {
+			isa = PBXGroup;
+			children = (
+				8212B4E11FDE4B1B00DBCBCF /* JDLAnimationButton.h */,
+				8212B4E21FDE4B1B00DBCBCF /* JDLAnimationButton.m */,
+			);
+			path = "ButtonInherit(继承)";
+			sourceTree = "<group>";
+		};
+		824960CC1FE0D871004DF289 /* Navigation(自定义多样化导航栏) */ = {
+			isa = PBXGroup;
+			children = (
+				824960CD1FE0D8AA004DF289 /* JDLNavigationBar.h */,
+				824960CE1FE0D8AA004DF289 /* JDLNavigationBar.m */,
+				824960D01FE0D8BD004DF289 /* JDLCustomNavigationBar.h */,
+				824960D11FE0D8BD004DF289 /* JDLCustomNavigationBar.m */,
+			);
+			path = "Navigation(自定义多样化导航栏)";
 			sourceTree = "<group>";
 		};
 		88BB3892BD6F1DA5B50E8C0D /* Frameworks */ = {
@@ -381,11 +565,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8212B4B51FDD128900DBCBCF /* JDLHeadView.m in Sources */,
+				824960CF1FE0D8AA004DF289 /* JDLNavigationBar.m in Sources */,
+				8212B4D11FDE26A400DBCBCF /* JDLHomeViewController.m in Sources */,
+				8212B4CE1FDE269A00DBCBCF /* JDLFoundViewController.m in Sources */,
+				8212B4E71FDE517700DBCBCF /* UIButton+JDLCountDown.m in Sources */,
 				8212B4B11FDD109D00DBCBCF /* JDLPopContentManager.m in Sources */,
+				8212B4C51FDE1F9100DBCBCF /* JDLTabBarController.m in Sources */,
+				8212B4CB1FDE269000DBCBCF /* JDLMessageViewController.m in Sources */,
+				8212B4BD1FDD3DC500DBCBCF /* JDLUserMessageManager.m in Sources */,
+				8212B4BA1FDD3DA800DBCBCF /* JDLToolsManager.m in Sources */,
 				8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */,
+				8212B4C81FDE267F00DBCBCF /* JDLMineViewController.m in Sources */,
+				824960D21FE0D8BD004DF289 /* JDLCustomNavigationBar.m in Sources */,
+				8212B4F31FDF833200DBCBCF /* UIButton+JDLLayout.m in Sources */,
+				8212B4D51FDE2DA200DBCBCF /* JDLCenterViewController.m in Sources */,
 				8212B4891FDAD9CE00DBCBCF /* main.m in Sources */,
 				8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */,
+				8212B4E01FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m in Sources */,
+				8212B4E31FDE4B1B00DBCBCF /* JDLAnimationButton.m in Sources */,
+				8212B4DC1FDE38F600DBCBCF /* JDLHeadView.m in Sources */,
+				8212B4EA1FDE5C6500DBCBCF /* UIButton+JDLTouch.m in Sources */,
+				824960CB1FE0CFD3004DF289 /* JDLNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

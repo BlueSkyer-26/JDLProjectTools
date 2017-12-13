@@ -45,7 +45,18 @@
 #pragma mark ------ Manager -------
 #import "JDLPopContentManager.h"
 
+#pragma mark ------ Category -------
+#import "UIButton+JDLTouch.h"
+#import "UIButton+JDLLayout.h"
+#import "UIButton+JDLCountDown.h"
+#import "UIButton+JDLImagePosition.h"
+
+#pragma mark ------ Custom -------
+#import "JDLHeadView.h"
+#import "JDLAnimationButton.h"
+
 #pragma mark ------ Third -------
+#import <YYKit.h>
 #import <Masonry.h>
 #import <MJRefresh.h>
 #import <YBPopupMenu.h>

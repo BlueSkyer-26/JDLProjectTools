@@ -34,15 +34,15 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - DZNEmptyDataSet
+  - DZNEmptyDataSet (= 1.8.1)
   - IQKeyboardManager (~> 3.3.7)
-  - KLCPopup
+  - KLCPopup (~> 1.0)
   - Masonry
   - MJExtension (~> 3.0.13)
   - MJRefresh
   - ReactiveCocoa (= 2.5)
-  - YBPopupMenu
-  - YYKit
+  - YBPopupMenu (= 1.0.0)
+  - YYKit (= 1.0.9)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -56,6 +56,6 @@ SPEC CHECKSUMS:
   YBPopupMenu: b466cf9daa0d341ea15c5ad709247546051c4d86
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 66e772003d40ddaf0fea80651df095bba8d75413
+PODFILE CHECKSUM: 69fae66da7ac858ee2cccc352cb0774b1c07bbdd
 
 COCOAPODS: 1.2.1

@@ -51,8 +51,8 @@
 
 #define KRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define KRGBAlphaColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
-#define KWhiteAlphaColor(a) [[UIColor whiteColor] colorWithAlphaComponent:a];
-#define KBlackAlphaColor(a) [[UIColor blackColor] colorWithAlphaComponent:a];
+#define KWhiteAlphaColor(a) [[UIColor whiteColor] colorWithAlphaComponent:a]
+#define KBlackAlphaColor(a) [[UIColor blackColor] colorWithAlphaComponent:a]
 //home scrollview bgcolor
 #define KAdvertScrollviewColor ([UIColor colorWithRed:226.0/255.0 green:80.0/255.0 blue:76.0/255.0 alpha:1.0])
 
