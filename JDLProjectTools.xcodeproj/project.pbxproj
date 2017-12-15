@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B8EE81D8A3CD0E5494EAB41 /* libPods-JDLProjectTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 133FB68D3277D1CF8B35FD6D /* libPods-JDLProjectTools.a */; };
+		820DA5F41FE3C4DD00F9C55B /* JDLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA5F31FE3C4DD00F9C55B /* JDLBaseViewController.m */; };
 		8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */; };
 		8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B47D1FDAD9CE00DBCBCF /* ViewController.m */; };
 		8212B4811FDAD9CE00DBCBCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8212B47F1FDAD9CE00DBCBCF /* Main.storyboard */; };
@@ -69,6 +70,8 @@
 		133FB68D3277D1CF8B35FD6D /* libPods-JDLProjectTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDLProjectTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5D872FD0BB7C4EC2563A8B /* Pods-JDLProjectTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLProjectTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDLProjectTools/Pods-JDLProjectTools.debug.xcconfig"; sourceTree = "<group>"; };
 		799B371B6FD615AA998852AD /* Pods-JDLProjectTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLProjectTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDLProjectTools/Pods-JDLProjectTools.release.xcconfig"; sourceTree = "<group>"; };
+		820DA5F21FE3C4DD00F9C55B /* JDLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLBaseViewController.h; sourceTree = "<group>"; };
+		820DA5F31FE3C4DD00F9C55B /* JDLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLBaseViewController.m; sourceTree = "<group>"; };
 		8212B4761FDAD9CE00DBCBCF /* JDLProjectTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDLProjectTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8212B4791FDAD9CE00DBCBCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -303,6 +306,8 @@
 				8212B4C41FDE1F9100DBCBCF /* JDLTabBarController.m */,
 				824960C91FE0CFD3004DF289 /* JDLNavigationController.h */,
 				824960CA1FE0CFD3004DF289 /* JDLNavigationController.m */,
+				820DA5F21FE3C4DD00F9C55B /* JDLBaseViewController.h */,
+				820DA5F31FE3C4DD00F9C55B /* JDLBaseViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -701,6 +706,7 @@
 				8212B4E71FDE517700DBCBCF /* UIButton+JDLCountDown.m in Sources */,
 				8212B4B11FDD109D00DBCBCF /* JDLPopContentManager.m in Sources */,
 				824960DE1FE10389004DF289 /* UITableView+JDLAnimationKit.m in Sources */,
+				820DA5F41FE3C4DD00F9C55B /* JDLBaseViewController.m in Sources */,
 				8212B4C51FDE1F9100DBCBCF /* JDLTabBarController.m in Sources */,
 				8212B4CB1FDE269000DBCBCF /* JDLMessageViewController.m in Sources */,
 				8212B4BD1FDD3DC500DBCBCF /* JDLUserMessageManager.m in Sources */,

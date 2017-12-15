@@ -20,11 +20,11 @@
 #pragma mark ------ 统一设置所有的 UITabBarItem 文字属性 -------
 +(void)initialize{
     NSMutableDictionary *attrs =[NSMutableDictionary dictionary];
-    attrs[NSFontAttributeName] =KSYSTEMFONT(12);
+    attrs[NSFontAttributeName] =KSYSTEMFONT(11);
     attrs[NSForegroundColorAttributeName] =KGrayColor;
     
     NSMutableDictionary *selectAttrs =[NSMutableDictionary dictionary];
-    selectAttrs[NSFontAttributeName] =KSYSTEMFONT(12);
+    selectAttrs[NSFontAttributeName] =KSYSTEMFONT(11);
     selectAttrs[NSForegroundColorAttributeName] =KThemeColor;
     
     UITabBarItem *items =[UITabBarItem appearance];

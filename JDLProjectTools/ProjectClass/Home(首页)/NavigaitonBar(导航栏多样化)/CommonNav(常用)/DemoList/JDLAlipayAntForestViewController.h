@@ -6,10 +6,10 @@
 //  Copyright © 2017年 BlueSkyer-25. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JDLBaseViewController.h"
 
 //蚂蚁森林
 
-@interface JDLAlipayAntForestViewController : UIViewController
+@interface JDLAlipayAntForestViewController : JDLBaseViewController
 
 @end

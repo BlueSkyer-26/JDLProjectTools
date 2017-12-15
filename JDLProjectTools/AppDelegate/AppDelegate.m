@@ -24,7 +24,7 @@
     self.window.rootViewController = [[JDLTabBarController alloc] init];
 
     [self setNavBarAppearence];     //统一配置导航栏 状态栏
-    [self adaptationNewIOS];        //适配iOS11
+    [self adaptationNewIOS];        //适配iOS11以上版本
     [self configureBoardManager];   //键盘弹起收回统一处理
     
     [self.window makeKeyAndVisible];

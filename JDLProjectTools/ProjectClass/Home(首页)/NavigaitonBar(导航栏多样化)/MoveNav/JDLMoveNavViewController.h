@@ -6,8 +6,8 @@
 //  Copyright © 2017年 BlueSkyer-25. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JDLBaseViewController.h"
 
-@interface JDLMoveNavViewController : UIViewController
+@interface JDLMoveNavViewController : JDLBaseViewController
 
 @end
