@@ -16,6 +16,10 @@
 #define KSCALE_WIDTH [UIScreen mainScreen].bounds.size.width/375
 #define KSCALE_HEIGHT [UIScreen mainScreen].bounds.size.height/667
 
+#define KLeftPadding KAdaptX(15)
+#define KTwoMultiplication(padding)  2 * padding
+#define KTwoHalfMultiplication(padding)  0.5 * padding
+
 #define KAdaptX(x) KSCALE_WIDTH * x
 #define KAdaptY(y) KSCALE_HEIGHT * y
 #define KHAdaptX(x) KSCALE_HEIGHT * x
@@ -23,7 +27,7 @@
 
 #pragma mark ===========颜色区===========--BlueSkyer25
 //主题色 导航栏颜色
-#define KThemeColor ([UIColor colorWithRed:252.0/255.0 green:104.0/255.0 blue:34.0/255.0 alpha:1.0])
+#define KThemeColor KRGBColor(251, 89, 85)
 #define KVCBackgroundColor ([UIColor colorWithRed:245.0/255.0 green:247.0/255.0 blue:249.0/255.0 alpha:1.0])
 #define KNAVColor ([UIColor colorWithRed:252.0/255.0 green:104.0/255.0 blue:34.0/255.0 alpha:1.0])
 #define KTabbarColor ([UIColor colorWithRed:246.0/255.0 green:246.0/255.0 blue:246.0/255.0 alpha:1.0])

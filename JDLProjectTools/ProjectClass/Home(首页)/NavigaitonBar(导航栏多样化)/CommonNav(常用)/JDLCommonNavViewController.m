@@ -1,27 +1,26 @@
 //
-//  JDLHomeViewController.m
+//  JDLCommonNavViewController.m
 //  JDLProjectTools
 //
-//  Created by 胜炫电子 on 2017/12/11.
+//  Created by 胜炫电子 on 2017/12/13.
 //  Copyright © 2017年 BlueSkyer-25. All rights reserved.
 //
 
-#import "JDLHomeViewController.h"
+#import "JDLCommonNavViewController.h"
 
-@interface JDLHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface JDLCommonNavViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *modelsArray;
-
 @property (nonatomic,strong) NSArray *vcClassArray;
+
 @end
 
-@implementation JDLHomeViewController
+@implementation JDLCommonNavViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title =@"首页";
+
     [self.view addSubview:self.tableView];
 }
 
@@ -35,7 +34,7 @@
 {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                                    reuseIdentifier:nil];
-
+    
     cell.textLabel.text = self.modelsArray[indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     return cell;
@@ -49,10 +48,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
+    
     UIViewController *vc =[[NSClassFromString(self.vcClassArray[indexPath.row]) alloc] init];
     vc.view.backgroundColor =KVCBackgroundColor;
-    vc.title =self.modelsArray[indexPath.row];
+//    vc.title =self.modelsArray[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -70,14 +69,16 @@
 
 -(NSMutableArray *)modelsArray{
     if (!_modelsArray) {
-        _modelsArray =[NSMutableArray arrayWithObjects:@"按钮动画&&文字图片位置",@"自定义导航栏多样化",@"弹出视图&&动画",nil];
-        self.vcClassArray =@[@"JDLButtonViewController",@"JDLNavigationTabBarController",@"JDLPopupViewViewController"];
+        _modelsArray =[NSMutableArray arrayWithObjects:@"蚂蚁森林",@"QQApp",@"QQ个人信息",nil];
+        self.vcClassArray =@[@"JDLAlipayAntForestViewController",@"JDLQQAppViewController",@"JDLQQMyMessageViewController"];
     }
     return _modelsArray;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+
 }
+
 
 @end

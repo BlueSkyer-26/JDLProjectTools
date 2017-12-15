@@ -43,17 +43,20 @@
 #import "JDLProjectConfiguration.h"
 
 #pragma mark ------ Manager -------
-#import "JDLPopContentManager.h"
+#import "JDLPopContentManager.h"                //弹出视图管理类
 
 #pragma mark ------ Category -------
-#import "UIButton+JDLTouch.h"
-#import "UIButton+JDLLayout.h"
-#import "UIButton+JDLCountDown.h"
-#import "UIButton+JDLImagePosition.h"
+#import "UIButton+JDLTouch.h"                   //防止button重复点击
+#import "UIButton+JDLLayout.h"                  //button 图片文字位置自定义
+#import "UIButton+JDLCountDown.h"               //button 带有倒计时
+#import "UIButton+JDLImagePosition.h"           //button 图片文字位置自定义 设置frame的方式
 
 #pragma mark ------ Custom -------
 #import "JDLHeadView.h"
-#import "JDLAnimationButton.h"
+#import "JDLAnimationButton.h"                  //带有动画button
+#import "JDLNavigationBar.h"                    //导航渐变 颜色 状态栏
+#import "JDLCustomNavigationBar.h"
+#import "JDLTableViewAnimationKitHeaders.h"     //tableview  展示cell动画
 
 #pragma mark ------ Third -------
 #import <YYKit.h>

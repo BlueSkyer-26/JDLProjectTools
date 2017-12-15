@@ -31,4 +31,35 @@
     return popup;
 }
 
++(KLCPopup *)showPopContentViewTop:(UIView *)contentView{
+    KLCPopupLayout layout = KLCPopupLayoutMake(KLCPopupHorizontalLayoutCenter, KLCPopupVerticalLayoutTop);
+    
+    KLCPopup *popup = [KLCPopup popupWithContentView:contentView showType:KLCPopupShowTypeSlideInFromTop dismissType:KLCPopupDismissTypeSlideOutToTop maskType:KLCPopupMaskTypeDimmed dismissOnBackgroundTouch:YES dismissOnContentTouch:NO];
+    
+    [popup showWithLayout:layout];
+    
+    return popup;
+}
+
++(KLCPopup *)showPopContentViewLeft:(UIView *)contentView{
+    KLCPopupLayout layout = KLCPopupLayoutMake(KLCPopupHorizontalLayoutLeft, KLCPopupVerticalLayoutCenter);
+    
+    KLCPopup *popup = [KLCPopup popupWithContentView:contentView showType:KLCPopupShowTypeSlideInFromLeft dismissType:KLCPopupDismissTypeSlideOutToLeft maskType:KLCPopupMaskTypeDimmed dismissOnBackgroundTouch:YES dismissOnContentTouch:NO];
+    
+    [popup showWithLayout:layout];
+    
+    return popup;
+}
+
++(KLCPopup *)showPopContentViewRight:(UIView *)contentView{
+    KLCPopupLayout layout = KLCPopupLayoutMake(KLCPopupHorizontalLayoutRight, KLCPopupVerticalLayoutCenter);
+    
+    KLCPopup *popup = [KLCPopup popupWithContentView:contentView showType:KLCPopupShowTypeSlideInFromRight dismissType:KLCPopupDismissTypeSlideOutToRight maskType:KLCPopupMaskTypeDimmed dismissOnBackgroundTouch:YES dismissOnContentTouch:NO];
+    
+    [popup showWithLayout:layout];
+    
+    return popup;
+}
+
+
 @end

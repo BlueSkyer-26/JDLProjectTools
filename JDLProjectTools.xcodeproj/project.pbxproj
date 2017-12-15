@@ -34,6 +34,18 @@
 		824960CB1FE0CFD3004DF289 /* JDLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960CA1FE0CFD3004DF289 /* JDLNavigationController.m */; };
 		824960CF1FE0D8AA004DF289 /* JDLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960CE1FE0D8AA004DF289 /* JDLNavigationBar.m */; };
 		824960D21FE0D8BD004DF289 /* JDLCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960D11FE0D8BD004DF289 /* JDLCustomNavigationBar.m */; };
+		824960D51FE0F039004DF289 /* AppDelegate+JDLAppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960D41FE0F039004DF289 /* AppDelegate+JDLAppService.m */; };
+		824960D91FE102D6004DF289 /* JDLTableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960D81FE102D6004DF289 /* JDLTableViewAnimationKit.m */; };
+		824960DE1FE10389004DF289 /* UITableView+JDLAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960DD1FE10389004DF289 /* UITableView+JDLAnimationKit.m */; };
+		824960E21FE11167004DF289 /* JDLNavigationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960E11FE11167004DF289 /* JDLNavigationTabBarController.m */; };
+		824960E61FE11227004DF289 /* JDLButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960E51FE11227004DF289 /* JDLButtonViewController.m */; };
+		824960EA1FE11387004DF289 /* JDLPopupViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960E91FE11387004DF289 /* JDLPopupViewViewController.m */; };
+		824960F01FE11E87004DF289 /* JDLCommonNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960EF1FE11E87004DF289 /* JDLCommonNavViewController.m */; };
+		824960F31FE11E95004DF289 /* JDLCustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960F21FE11E95004DF289 /* JDLCustomNavViewController.m */; };
+		824960F61FE11EA0004DF289 /* JDLMoveNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960F51FE11EA0004DF289 /* JDLMoveNavViewController.m */; };
+		824960FE1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960FD1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m */; };
+		82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */; };
+		82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +124,32 @@
 		824960CE1FE0D8AA004DF289 /* JDLNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLNavigationBar.m; sourceTree = "<group>"; };
 		824960D01FE0D8BD004DF289 /* JDLCustomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCustomNavigationBar.h; sourceTree = "<group>"; };
 		824960D11FE0D8BD004DF289 /* JDLCustomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLCustomNavigationBar.m; sourceTree = "<group>"; };
+		824960D31FE0F039004DF289 /* AppDelegate+JDLAppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JDLAppService.h"; sourceTree = "<group>"; };
+		824960D41FE0F039004DF289 /* AppDelegate+JDLAppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JDLAppService.m"; sourceTree = "<group>"; };
+		824960D71FE102D6004DF289 /* JDLTableViewAnimationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLTableViewAnimationKit.h; sourceTree = "<group>"; };
+		824960D81FE102D6004DF289 /* JDLTableViewAnimationKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLTableViewAnimationKit.m; sourceTree = "<group>"; };
+		824960DA1FE102F9004DF289 /* JDLTableViewAnimationKitConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLTableViewAnimationKitConfig.h; sourceTree = "<group>"; };
+		824960DB1FE1034C004DF289 /* JDLTableViewAnimationKitHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLTableViewAnimationKitHeaders.h; sourceTree = "<group>"; };
+		824960DC1FE10389004DF289 /* UITableView+JDLAnimationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+JDLAnimationKit.h"; sourceTree = "<group>"; };
+		824960DD1FE10389004DF289 /* UITableView+JDLAnimationKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JDLAnimationKit.m"; sourceTree = "<group>"; };
+		824960E01FE11167004DF289 /* JDLNavigationTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLNavigationTabBarController.h; sourceTree = "<group>"; };
+		824960E11FE11167004DF289 /* JDLNavigationTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLNavigationTabBarController.m; sourceTree = "<group>"; };
+		824960E41FE11227004DF289 /* JDLButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLButtonViewController.h; sourceTree = "<group>"; };
+		824960E51FE11227004DF289 /* JDLButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLButtonViewController.m; sourceTree = "<group>"; };
+		824960E81FE11387004DF289 /* JDLPopupViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPopupViewViewController.h; sourceTree = "<group>"; };
+		824960E91FE11387004DF289 /* JDLPopupViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLPopupViewViewController.m; sourceTree = "<group>"; };
+		824960EE1FE11E87004DF289 /* JDLCommonNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCommonNavViewController.h; sourceTree = "<group>"; };
+		824960EF1FE11E87004DF289 /* JDLCommonNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLCommonNavViewController.m; sourceTree = "<group>"; };
+		824960F11FE11E95004DF289 /* JDLCustomNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCustomNavViewController.h; sourceTree = "<group>"; };
+		824960F21FE11E95004DF289 /* JDLCustomNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLCustomNavViewController.m; sourceTree = "<group>"; };
+		824960F41FE11EA0004DF289 /* JDLMoveNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMoveNavViewController.h; sourceTree = "<group>"; };
+		824960F51FE11EA0004DF289 /* JDLMoveNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMoveNavViewController.m; sourceTree = "<group>"; };
+		824960FC1FE13D0D004DF289 /* JDLAlipayAntForestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLAlipayAntForestViewController.h; sourceTree = "<group>"; };
+		824960FD1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLAlipayAntForestViewController.m; sourceTree = "<group>"; };
+		82FF319A1FE26E8B00E67B18 /* JDLQQAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQAppViewController.h; sourceTree = "<group>"; };
+		82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLQQAppViewController.m; sourceTree = "<group>"; };
+		82FF319D1FE277DB00E67B18 /* JDLQQMyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQMyMessageViewController.h; sourceTree = "<group>"; };
+		82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLQQMyMessageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +248,7 @@
 		8212B4AB1FDD0EA200DBCBCF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				824960D61FE1026F004DF289 /* TableviewCellAnimation(cell动画) */,
 				824960CC1FE0D871004DF289 /* Navigation(自定义多样化导航栏) */,
 				8212B4E41FDE4FCF00DBCBCF /* block&delagate(例子) */,
 				8212B4DD1FDE3A1200DBCBCF /* JDLCategoryInherit(系统控件类别继承) */,
@@ -251,6 +290,8 @@
 			children = (
 				8212B4791FDAD9CE00DBCBCF /* AppDelegate.h */,
 				8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */,
+				824960D31FE0F039004DF289 /* AppDelegate+JDLAppService.h */,
+				824960D41FE0F039004DF289 /* AppDelegate+JDLAppService.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -271,6 +312,9 @@
 			children = (
 				8212B4CF1FDE26A400DBCBCF /* JDLHomeViewController.h */,
 				8212B4D01FDE26A400DBCBCF /* JDLHomeViewController.m */,
+				824960E31FE111FE004DF289 /* Button(按钮动画&&文字图片位置) */,
+				824960DF1FE110C3004DF289 /* NavigaitonBar(导航栏多样化) */,
+				824960E71FE11337004DF289 /* PopView(弹出视图&&动画) */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -370,6 +414,90 @@
 				824960D11FE0D8BD004DF289 /* JDLCustomNavigationBar.m */,
 			);
 			path = "Navigation(自定义多样化导航栏)";
+			sourceTree = "<group>";
+		};
+		824960D61FE1026F004DF289 /* TableviewCellAnimation(cell动画) */ = {
+			isa = PBXGroup;
+			children = (
+				824960D71FE102D6004DF289 /* JDLTableViewAnimationKit.h */,
+				824960D81FE102D6004DF289 /* JDLTableViewAnimationKit.m */,
+				824960DA1FE102F9004DF289 /* JDLTableViewAnimationKitConfig.h */,
+				824960DB1FE1034C004DF289 /* JDLTableViewAnimationKitHeaders.h */,
+				824960DC1FE10389004DF289 /* UITableView+JDLAnimationKit.h */,
+				824960DD1FE10389004DF289 /* UITableView+JDLAnimationKit.m */,
+			);
+			path = "TableviewCellAnimation(cell动画)";
+			sourceTree = "<group>";
+		};
+		824960DF1FE110C3004DF289 /* NavigaitonBar(导航栏多样化) */ = {
+			isa = PBXGroup;
+			children = (
+				824960E01FE11167004DF289 /* JDLNavigationTabBarController.h */,
+				824960E11FE11167004DF289 /* JDLNavigationTabBarController.m */,
+				824960EB1FE11E42004DF289 /* CommonNav(常用) */,
+				824960EC1FE11E5C004DF289 /* CustomNav */,
+				824960ED1FE11E6D004DF289 /* MoveNav */,
+			);
+			path = "NavigaitonBar(导航栏多样化)";
+			sourceTree = "<group>";
+		};
+		824960E31FE111FE004DF289 /* Button(按钮动画&&文字图片位置) */ = {
+			isa = PBXGroup;
+			children = (
+				824960E41FE11227004DF289 /* JDLButtonViewController.h */,
+				824960E51FE11227004DF289 /* JDLButtonViewController.m */,
+			);
+			path = "Button(按钮动画&&文字图片位置)";
+			sourceTree = "<group>";
+		};
+		824960E71FE11337004DF289 /* PopView(弹出视图&&动画) */ = {
+			isa = PBXGroup;
+			children = (
+				824960E81FE11387004DF289 /* JDLPopupViewViewController.h */,
+				824960E91FE11387004DF289 /* JDLPopupViewViewController.m */,
+			);
+			path = "PopView(弹出视图&&动画)";
+			sourceTree = "<group>";
+		};
+		824960EB1FE11E42004DF289 /* CommonNav(常用) */ = {
+			isa = PBXGroup;
+			children = (
+				824960EE1FE11E87004DF289 /* JDLCommonNavViewController.h */,
+				824960EF1FE11E87004DF289 /* JDLCommonNavViewController.m */,
+				824960FB1FE13CCE004DF289 /* DemoList */,
+			);
+			path = "CommonNav(常用)";
+			sourceTree = "<group>";
+		};
+		824960EC1FE11E5C004DF289 /* CustomNav */ = {
+			isa = PBXGroup;
+			children = (
+				824960F11FE11E95004DF289 /* JDLCustomNavViewController.h */,
+				824960F21FE11E95004DF289 /* JDLCustomNavViewController.m */,
+			);
+			path = CustomNav;
+			sourceTree = "<group>";
+		};
+		824960ED1FE11E6D004DF289 /* MoveNav */ = {
+			isa = PBXGroup;
+			children = (
+				824960F41FE11EA0004DF289 /* JDLMoveNavViewController.h */,
+				824960F51FE11EA0004DF289 /* JDLMoveNavViewController.m */,
+			);
+			path = MoveNav;
+			sourceTree = "<group>";
+		};
+		824960FB1FE13CCE004DF289 /* DemoList */ = {
+			isa = PBXGroup;
+			children = (
+				824960FC1FE13D0D004DF289 /* JDLAlipayAntForestViewController.h */,
+				824960FD1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m */,
+				82FF319A1FE26E8B00E67B18 /* JDLQQAppViewController.h */,
+				82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */,
+				82FF319D1FE277DB00E67B18 /* JDLQQMyMessageViewController.h */,
+				82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */,
+			);
+			path = DemoList;
 			sourceTree = "<group>";
 		};
 		88BB3892BD6F1DA5B50E8C0D /* Frameworks */ = {
@@ -568,21 +696,33 @@
 				824960CF1FE0D8AA004DF289 /* JDLNavigationBar.m in Sources */,
 				8212B4D11FDE26A400DBCBCF /* JDLHomeViewController.m in Sources */,
 				8212B4CE1FDE269A00DBCBCF /* JDLFoundViewController.m in Sources */,
+				824960D91FE102D6004DF289 /* JDLTableViewAnimationKit.m in Sources */,
+				824960F61FE11EA0004DF289 /* JDLMoveNavViewController.m in Sources */,
 				8212B4E71FDE517700DBCBCF /* UIButton+JDLCountDown.m in Sources */,
 				8212B4B11FDD109D00DBCBCF /* JDLPopContentManager.m in Sources */,
+				824960DE1FE10389004DF289 /* UITableView+JDLAnimationKit.m in Sources */,
 				8212B4C51FDE1F9100DBCBCF /* JDLTabBarController.m in Sources */,
 				8212B4CB1FDE269000DBCBCF /* JDLMessageViewController.m in Sources */,
 				8212B4BD1FDD3DC500DBCBCF /* JDLUserMessageManager.m in Sources */,
 				8212B4BA1FDD3DA800DBCBCF /* JDLToolsManager.m in Sources */,
+				824960D51FE0F039004DF289 /* AppDelegate+JDLAppService.m in Sources */,
+				824960FE1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m in Sources */,
+				824960E21FE11167004DF289 /* JDLNavigationTabBarController.m in Sources */,
+				82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */,
 				8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */,
 				8212B4C81FDE267F00DBCBCF /* JDLMineViewController.m in Sources */,
+				824960E61FE11227004DF289 /* JDLButtonViewController.m in Sources */,
+				824960F31FE11E95004DF289 /* JDLCustomNavViewController.m in Sources */,
 				824960D21FE0D8BD004DF289 /* JDLCustomNavigationBar.m in Sources */,
 				8212B4F31FDF833200DBCBCF /* UIButton+JDLLayout.m in Sources */,
+				824960F01FE11E87004DF289 /* JDLCommonNavViewController.m in Sources */,
 				8212B4D51FDE2DA200DBCBCF /* JDLCenterViewController.m in Sources */,
 				8212B4891FDAD9CE00DBCBCF /* main.m in Sources */,
+				82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */,
 				8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */,
 				8212B4E01FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m in Sources */,
 				8212B4E31FDE4B1B00DBCBCF /* JDLAnimationButton.m in Sources */,
+				824960EA1FE11387004DF289 /* JDLPopupViewViewController.m in Sources */,
 				8212B4DC1FDE38F600DBCBCF /* JDLHeadView.m in Sources */,
 				8212B4EA1FDE5C6500DBCBCF /* UIButton+JDLTouch.m in Sources */,
 				824960CB1FE0CFD3004DF289 /* JDLNavigationController.m in Sources */,

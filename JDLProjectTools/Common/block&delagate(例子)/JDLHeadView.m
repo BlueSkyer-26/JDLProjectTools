@@ -33,7 +33,8 @@
         
         UIButton *btn =[UIButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor =[UIColor cyanColor];
-        btn.frame =CGRectMake(40, CGRectGetMaxY(label.frame) +20, KScreenWidth -80, 40);
+        btn.frame =CGRectMake(40, CGRectGetMaxY(label.frame) +20, KScreenWidth -80, KScreenWidth -80);
+        [btn setImage:KImageName(@"Icon-tabbar") forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
     }

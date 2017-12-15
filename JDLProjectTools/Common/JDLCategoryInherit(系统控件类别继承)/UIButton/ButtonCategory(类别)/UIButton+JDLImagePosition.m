@@ -58,5 +58,9 @@
     }
 }
 
+-(void)JDL_setCornerRadiusFlout:(CGFloat )flout{
+    self.layer.cornerRadius =flout;
+    self.layer.masksToBounds =YES;
+}
 
 @end

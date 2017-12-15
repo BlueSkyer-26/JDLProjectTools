@@ -25,5 +25,10 @@ typedef NS_ENUM(NSInteger,JDLImagePositionStyle) {
  */
 - (void)JDL_imagePositionStyle:(JDLImagePositionStyle)imagePositionStyle spacing:(CGFloat)spacing;
 
-
+/**
+ *  设置button圆角
+ *
+ *  @param flout     图角
+ */
+-(void)JDL_setCornerRadiusFlout:(CGFloat )flout;
 @end

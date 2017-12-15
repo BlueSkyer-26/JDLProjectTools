@@ -17,7 +17,9 @@
 + (int)screenHeight;
 @end
 
-
+/*
+     需在appdelagate中统一配置初始样式
+ */
 #pragma mark - Default
 @interface JDLNavigationBar (JDLDefault)
 

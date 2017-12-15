@@ -32,4 +32,5 @@ typedef void(^ClickBlock)(void);
                         backgroundColor:(UIColor *)backgroundColor
                               imageName:(NSString *)image
                                andBlock:(ClickBlock)tempBlock;
+
 @end

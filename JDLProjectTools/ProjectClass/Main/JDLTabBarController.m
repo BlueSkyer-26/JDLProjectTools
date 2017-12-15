@@ -61,9 +61,9 @@
 #pragma mark ------ 设置所有子控制器 -------
 -(void)addChildViewControllerClassName:(NSString *)className title:(NSString *)title imageName:(NSString *)imageName selectimageName:(NSString *)selectimageName{
     UIViewController *controller =[[NSClassFromString(className) alloc] init];
-    controller.title =title;
+//    controller.title =title;
     controller.tabBarItem.title =title;
-    controller.view.backgroundColor =KRANDOM_COLOR;
+    controller.view.backgroundColor =KVCBackgroundColor;
     controller.tabBarItem.image =KImageName(imageName);
     controller.tabBarItem.selectedImage =KImageName(selectimageName);
     
@@ -73,48 +73,49 @@
 
 #pragma mark ------ 添加中间突出按钮 -------
 -(void)addCenterButton{
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [button setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
-//    [button setImage:[UIImage imageNamed:@"tabBar_publish_icon_highlighted"] forState:UIControlStateSelected];
-//    [button setTitle:@"" forState:UIControlStateNormal];
-//    button.backgroundColor =KThemeColor;
-//    [button addTarget:self action:@selector(composeButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-//    self.centerButton = button;
-//    [self.tabBar addSubview:button];
-//    [self.tabBar bringSubviewToFront:button];
-//    CGFloat width = self.tabBar.bounds.size.width / self.childViewControllers.count;
-//    self.tabBar.tintColor = [UIColor colorWithRed:68/255.0 green:173/255.0 blue:159/255.0 alpha:1];
-//    button.frame = CGRectInset(self.tabBar.bounds, 2 *width, 0);
-//    button.titleRect = CGRectMake(0, button.frame.size.height *0.5, width, button.frame.size.height *0.5);
-//    button.imageRect = CGRectMake(width *0.2, (button.frame.size.height -width *0.6) *0.5, width *0.6, width *0.6);
-//    button.titleLabel.textAlignment =NSTextAlignmentCenter;
+    
+    //下面两者任选其一
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"tabBar_publish_icon_highlighted"] forState:UIControlStateSelected];
+    [button setTitle:@"" forState:UIControlStateNormal];
+    button.backgroundColor =KClearColor;
+    [button addTarget:self action:@selector(composeButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.centerButton = button;
+    [self.tabBar addSubview:button];
+    [self.tabBar bringSubviewToFront:button];
+    CGFloat width = self.tabBar.bounds.size.width / self.childViewControllers.count;
+    self.tabBar.tintColor = [UIColor colorWithRed:68/255.0 green:173/255.0 blue:159/255.0 alpha:1];
+    button.frame = CGRectInset(self.tabBar.bounds, 2 *width, 0);
+    button.titleRect = CGRectMake(0, button.frame.size.height *0.5, width, button.frame.size.height *0.5);
+    button.imageRect = CGRectMake(width *0.2, (button.frame.size.height -width *0.6) *0.5, width *0.6, width *0.6);
+    button.titleLabel.textAlignment =NSTextAlignmentCenter;
     
     
-
-    JDLAnimationButton *centerButton =[JDLAnimationButton buttonWithType:UIButtonTypeCustom frame:CGRectZero title:@"" titleColor:KThemeColor backgroundColor:KClearColor imageName:@"tabBar_publish_icon" andBlock:^{
-
-        JDLHeadView *view =[[JDLHeadView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight -200)];
-        
-        KLCPopup *popView =[JDLPopContentManager showPopContentViewBottom:view];
-        view.clickViewBlock = ^(NSString *str) {
-            
-            [popView dismiss:YES];
-        };
-    }];
-    [centerButton setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
-    [centerButton setImage:[UIImage imageNamed:@"tabBar_publish_icon_highlighted"] forState:UIControlStateSelected];
-    centerButton.buttonScale =0.5;
-    centerButton.titleLabel.textAlignment =NSTextAlignmentCenter;
-
-    CGFloat width = self.tabBar.width / self.childViewControllers.count;
-    CGRect frame = CGRectInset(self.tabBar.bounds, 2 *width, 0);
-    centerButton.frame =frame;
-    centerButton.titleRect = CGRectMake(0, centerButton.height *0.5, width, centerButton.height *0.5);
-    centerButton.imageRect = CGRectMake(width *0.17, (centerButton.height -width *0.66) *0.5, width *0.66, width *0.66);
-    centerButton.titleLabel.textAlignment =NSTextAlignmentCenter;
-    [self.tabBar addSubview:centerButton];
-    [self.tabBar bringSubviewToFront:centerButton];
-    self.centerButton =centerButton;
+//    JDLAnimationButton *centerButton =[JDLAnimationButton buttonWithType:UIButtonTypeCustom frame:CGRectZero title:@"" titleColor:KThemeColor backgroundColor:KClearColor imageName:@"tabBar_publish_icon" andBlock:^{
+//
+//        JDLHeadView *view =[[JDLHeadView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight -200)];
+//
+//        KLCPopup *popView =[JDLPopContentManager showPopContentViewBottom:view];
+//        view.clickViewBlock = ^(NSString *str) {
+//
+//            [popView dismiss:YES];
+//        };
+//    }];
+//    [centerButton setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+//    [centerButton setImage:[UIImage imageNamed:@"tabBar_publish_icon_highlighted"] forState:UIControlStateSelected];
+//    centerButton.buttonScale =0.9;
+//    centerButton.titleLabel.textAlignment =NSTextAlignmentCenter;
+//
+//    CGFloat width = self.tabBar.width / self.childViewControllers.count;
+//    CGRect frame = CGRectInset(self.tabBar.bounds, 2 *width, 0);
+//    centerButton.frame =frame;
+//    centerButton.titleRect = CGRectMake(0, centerButton.height *0.5, width, centerButton.height *0.5);
+//    centerButton.imageRect = CGRectMake(width *0.17, (centerButton.height -width *0.66) *0.5, width *0.66, width *0.66);
+//    centerButton.titleLabel.textAlignment =NSTextAlignmentCenter;
+//    [self.tabBar addSubview:centerButton];
+//    [self.tabBar bringSubviewToFront:centerButton];
+//    self.centerButton =centerButton;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -126,6 +127,13 @@
 #pragma mark ------ 点击中间按钮 ------
 - (void)composeButtonClick:(UIButton *)button {
     NSLog(@"点击了按钮");
+    JDLHeadView *view =[[JDLHeadView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight *0.2)];
+    
+    KLCPopup *popView =[JDLPopContentManager showPopContentViewBottom:view];
+    view.clickViewBlock = ^(NSString *str) {
+        
+        [popView dismiss:YES];
+    };
 //    UIViewController  *vc =[[UIViewController alloc] init];
 //    vc.view.backgroundColor =[UIColor yellowColor];
 //    [self presentViewController:vc animated:YES completion:nil];
