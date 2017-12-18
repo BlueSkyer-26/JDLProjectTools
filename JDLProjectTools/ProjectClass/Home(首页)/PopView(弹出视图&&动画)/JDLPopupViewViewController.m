@@ -35,7 +35,7 @@
         UIView *bgView =[[UIView alloc] initWithFrame:CGRectMake(KLeftPadding, 0, KScreenWidth -KTwoMultiplication(KLeftPadding), 200)];
         bgView.backgroundColor =KClearColor;
         
-        JDLHeadView *headView =[[JDLHeadView alloc] initWithFrame:CGRectMake(0, 0, bgView.width, bgView.height -20)];
+        JDLHeadView *headView =[[JDLHeadView alloc] initWithFrame:CGRectMake(0, 0, bgView.width, bgView.height)];
         [bgView addSubview:headView];
         
         KLCPopup *popView =[JDLPopContentManager showPopContentViewBottom:bgView];

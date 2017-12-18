@@ -161,7 +161,7 @@
 
 -(UITableView *)tableView{
     if(!_tableView){
-        _tableView =[[UITableView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight) style:UITableViewStylePlain];
+        _tableView =[[UITableView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight-KSafeHeight) style:UITableViewStylePlain];
         _tableView.separatorStyle =UITableViewCellSeparatorStyleNone;
         _tableView.contentInset =UIEdgeInsetsMake(0, 0, 0, 0);
         _tableView.showsVerticalScrollIndicator =NO;

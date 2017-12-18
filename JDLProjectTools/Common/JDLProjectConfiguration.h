@@ -106,6 +106,8 @@
 #define KNavbarHeight (KIS_IPHONE_X ? 88.f : 64.f)
 // tabBar高度
 #define KTabBarHeight (KIS_IPHONE_X ? (49.f+34.f) : 49.f)
+// bottom 安全高度
+#define KSafeHeight  (KIS_IPHONE_X ? 34.f: 0)
 
 
 #define KIS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)

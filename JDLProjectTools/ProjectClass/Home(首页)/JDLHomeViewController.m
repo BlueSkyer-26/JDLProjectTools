@@ -70,8 +70,8 @@
 
 -(NSMutableArray *)modelsArray{
     if (!_modelsArray) {
-        _modelsArray =[NSMutableArray arrayWithObjects:@"按钮动画&&文字图片位置",@"自定义导航栏多样化",@"弹出视图&&动画",nil];
-        self.vcClassArray =@[@"JDLButtonViewController",@"JDLNavigationTabBarController",@"JDLPopupViewViewController"];
+        _modelsArray =[NSMutableArray arrayWithObjects:@"按钮动画&&文字图片位置",@"自定义导航栏多样化",@"弹出视图&&动画",@"音乐播放器",nil];
+        self.vcClassArray =@[@"JDLButtonViewController",@"JDLNavigationTabBarController",@"JDLPopupViewViewController",@"JDLMusicViewController"];
     }
     return _modelsArray;
 }

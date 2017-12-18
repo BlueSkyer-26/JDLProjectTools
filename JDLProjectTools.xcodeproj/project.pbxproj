@@ -50,6 +50,13 @@
 		824960F31FE11E95004DF289 /* JDLCustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960F21FE11E95004DF289 /* JDLCustomNavViewController.m */; };
 		824960F61FE11EA0004DF289 /* JDLMoveNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960F51FE11EA0004DF289 /* JDLMoveNavViewController.m */; };
 		824960FE1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824960FD1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m */; };
+		826FAF9D1FE7746F009C275C /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAF9C1FE77469009C275C /* KLCPopup.m */; };
+		826FAFA21FE78735009C275C /* JDLMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFA11FE78735009C275C /* JDLMusicViewController.m */; };
+		826FAFA61FE79012009C275C /* JDLPageTitleViewConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFA51FE79012009C275C /* JDLPageTitleViewConfigure.m */; };
+		826FAFA91FE790BB009C275C /* JDLPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFA81FE790BB009C275C /* JDLPageTitleView.m */; };
+		826FAFAE1FE7913D009C275C /* JDLPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFAD1FE7913D009C275C /* JDLPageContentView.m */; };
+		826FAFB11FE79189009C275C /* JDLPageContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFB01FE79189009C275C /* JDLPageContentScrollView.m */; };
+		826FAFB51FE791EF009C275C /* UIView+JDLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFB41FE791EF009C275C /* UIView+JDLFrame.m */; };
 		82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */; };
 		82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */; };
 /* End PBXBuildFile section */
@@ -164,6 +171,22 @@
 		824960F51FE11EA0004DF289 /* JDLMoveNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMoveNavViewController.m; sourceTree = "<group>"; };
 		824960FC1FE13D0D004DF289 /* JDLAlipayAntForestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLAlipayAntForestViewController.h; sourceTree = "<group>"; };
 		824960FD1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLAlipayAntForestViewController.m; sourceTree = "<group>"; };
+		826FAF9B1FE77469009C275C /* KLCPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
+		826FAF9C1FE77469009C275C /* KLCPopup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
+		826FAF9E1FE77527009C275C /* KLCPopupConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLCPopupConfiguration.h; sourceTree = "<group>"; };
+		826FAFA01FE78735009C275C /* JDLMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicViewController.h; sourceTree = "<group>"; };
+		826FAFA11FE78735009C275C /* JDLMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicViewController.m; sourceTree = "<group>"; };
+		826FAFA41FE79012009C275C /* JDLPageTitleViewConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPageTitleViewConfigure.h; sourceTree = "<group>"; };
+		826FAFA51FE79012009C275C /* JDLPageTitleViewConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLPageTitleViewConfigure.m; sourceTree = "<group>"; };
+		826FAFA71FE790BB009C275C /* JDLPageTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPageTitleView.h; sourceTree = "<group>"; };
+		826FAFA81FE790BB009C275C /* JDLPageTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLPageTitleView.m; sourceTree = "<group>"; };
+		826FAFAC1FE7913D009C275C /* JDLPageContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPageContentView.h; sourceTree = "<group>"; };
+		826FAFAD1FE7913D009C275C /* JDLPageContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLPageContentView.m; sourceTree = "<group>"; };
+		826FAFAF1FE79189009C275C /* JDLPageContentScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPageContentScrollView.h; sourceTree = "<group>"; };
+		826FAFB01FE79189009C275C /* JDLPageContentScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLPageContentScrollView.m; sourceTree = "<group>"; };
+		826FAFB31FE791EF009C275C /* UIView+JDLFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JDLFrame.h"; sourceTree = "<group>"; };
+		826FAFB41FE791EF009C275C /* UIView+JDLFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDLFrame.m"; sourceTree = "<group>"; };
+		826FAFB61FE79262009C275C /* JDLPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPageView.h; sourceTree = "<group>"; };
 		82FF319A1FE26E8B00E67B18 /* JDLQQAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQAppViewController.h; sourceTree = "<group>"; };
 		82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLQQAppViewController.m; sourceTree = "<group>"; };
 		82FF319D1FE277DB00E67B18 /* JDLQQMyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQMyMessageViewController.h; sourceTree = "<group>"; };
@@ -227,6 +250,14 @@
 			path = DemoList;
 			sourceTree = "<group>";
 		};
+		820DA60D1FE773A400F9C55B /* Thirds */ = {
+			isa = PBXGroup;
+			children = (
+				826FAF9A1FE77469009C275C /* KLCPopup */,
+			);
+			path = Thirds;
+			sourceTree = "<group>";
+		};
 		8212B46D1FDAD9CE00DBCBCF = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +286,7 @@
 				8212B4B71FDD35B100DBCBCF /* AppDelegate */,
 				8212B4B21FDD126A00DBCBCF /* ProjectClass */,
 				8212B4AE1FDD0FD200DBCBCF /* ProjectManager */,
+				820DA60D1FE773A400F9C55B /* Thirds */,
 				8212B4AB1FDD0EA200DBCBCF /* Common */,
 				8212B47C1FDAD9CE00DBCBCF /* ViewController.h */,
 				8212B47D1FDAD9CE00DBCBCF /* ViewController.m */,
@@ -288,6 +320,7 @@
 		8212B4AB1FDD0EA200DBCBCF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				826FAFA31FE78FE0009C275C /* JDLCustomSegment(滑动选项卡) */,
 				824960D61FE1026F004DF289 /* TableviewCellAnimation(cell动画) */,
 				824960CC1FE0D871004DF289 /* Navigation(自定义多样化导航栏) */,
 				8212B4E41FDE4FCF00DBCBCF /* block&delagate(例子) */,
@@ -354,6 +387,7 @@
 			children = (
 				8212B4CF1FDE26A400DBCBCF /* JDLHomeViewController.h */,
 				8212B4D01FDE26A400DBCBCF /* JDLHomeViewController.m */,
+				826FAF9F1FE786FE009C275C /* Music(音乐播放) */,
 				824960E31FE111FE004DF289 /* Button(按钮动画&&文字图片位置) */,
 				824960DF1FE110C3004DF289 /* NavigaitonBar(导航栏多样化) */,
 				824960E71FE11337004DF289 /* PopView(弹出视图&&动画) */,
@@ -544,6 +578,67 @@
 				82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */,
 			);
 			path = DemoList;
+			sourceTree = "<group>";
+		};
+		826FAF9A1FE77469009C275C /* KLCPopup */ = {
+			isa = PBXGroup;
+			children = (
+				826FAF9B1FE77469009C275C /* KLCPopup.h */,
+				826FAF9C1FE77469009C275C /* KLCPopup.m */,
+				826FAF9E1FE77527009C275C /* KLCPopupConfiguration.h */,
+			);
+			path = KLCPopup;
+			sourceTree = "<group>";
+		};
+		826FAF9F1FE786FE009C275C /* Music(音乐播放) */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFA01FE78735009C275C /* JDLMusicViewController.h */,
+				826FAFA11FE78735009C275C /* JDLMusicViewController.m */,
+			);
+			path = "Music(音乐播放)";
+			sourceTree = "<group>";
+		};
+		826FAFA31FE78FE0009C275C /* JDLCustomSegment(滑动选项卡) */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFB61FE79262009C275C /* JDLPageView.h */,
+				826FAFB21FE791CE009C275C /* Category */,
+				826FAFAB1FE7911A009C275C /* JDLPageContent */,
+				826FAFAA1FE79106009C275C /* JDLPageTitle */,
+			);
+			path = "JDLCustomSegment(滑动选项卡)";
+			sourceTree = "<group>";
+		};
+		826FAFAA1FE79106009C275C /* JDLPageTitle */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFA41FE79012009C275C /* JDLPageTitleViewConfigure.h */,
+				826FAFA51FE79012009C275C /* JDLPageTitleViewConfigure.m */,
+				826FAFA71FE790BB009C275C /* JDLPageTitleView.h */,
+				826FAFA81FE790BB009C275C /* JDLPageTitleView.m */,
+			);
+			path = JDLPageTitle;
+			sourceTree = "<group>";
+		};
+		826FAFAB1FE7911A009C275C /* JDLPageContent */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFAC1FE7913D009C275C /* JDLPageContentView.h */,
+				826FAFAD1FE7913D009C275C /* JDLPageContentView.m */,
+				826FAFAF1FE79189009C275C /* JDLPageContentScrollView.h */,
+				826FAFB01FE79189009C275C /* JDLPageContentScrollView.m */,
+			);
+			path = JDLPageContent;
+			sourceTree = "<group>";
+		};
+		826FAFB21FE791CE009C275C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFB31FE791EF009C275C /* UIView+JDLFrame.h */,
+				826FAFB41FE791EF009C275C /* UIView+JDLFrame.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		88BB3892BD6F1DA5B50E8C0D /* Frameworks */ = {
@@ -750,13 +845,18 @@
 				820DA5F41FE3C4DD00F9C55B /* JDLBaseViewController.m in Sources */,
 				8212B4C51FDE1F9100DBCBCF /* JDLTabBarController.m in Sources */,
 				8212B4CB1FDE269000DBCBCF /* JDLMessageViewController.m in Sources */,
+				826FAF9D1FE7746F009C275C /* KLCPopup.m in Sources */,
+				826FAFB11FE79189009C275C /* JDLPageContentScrollView.m in Sources */,
 				8212B4BD1FDD3DC500DBCBCF /* JDLUserMessageManager.m in Sources */,
 				820DA6021FE75CA400F9C55B /* JDLBaseCustomNavViewController.m in Sources */,
+				826FAFB51FE791EF009C275C /* UIView+JDLFrame.m in Sources */,
 				8212B4BA1FDD3DA800DBCBCF /* JDLToolsManager.m in Sources */,
 				824960D51FE0F039004DF289 /* AppDelegate+JDLAppService.m in Sources */,
+				826FAFA91FE790BB009C275C /* JDLPageTitleView.m in Sources */,
 				824960FE1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m in Sources */,
 				824960E21FE11167004DF289 /* JDLNavigationTabBarController.m in Sources */,
 				820DA6081FE75DB400F9C55B /* JDLCustomBgImageViewController.m in Sources */,
+				826FAFA21FE78735009C275C /* JDLMusicViewController.m in Sources */,
 				82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */,
 				8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */,
 				820DA5FB1FE7556000F9C55B /* JDLMoveNavToStautarViewController.m in Sources */,
@@ -767,6 +867,7 @@
 				8212B4F31FDF833200DBCBCF /* UIButton+JDLLayout.m in Sources */,
 				824960F01FE11E87004DF289 /* JDLCommonNavViewController.m in Sources */,
 				8212B4D51FDE2DA200DBCBCF /* JDLCenterViewController.m in Sources */,
+				826FAFA61FE79012009C275C /* JDLPageTitleViewConfigure.m in Sources */,
 				8212B4891FDAD9CE00DBCBCF /* main.m in Sources */,
 				82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */,
 				8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */,
@@ -775,6 +876,7 @@
 				824960EA1FE11387004DF289 /* JDLPopupViewViewController.m in Sources */,
 				820DA5FE1FE755D600F9C55B /* JDLMoveFromYViewController.m in Sources */,
 				820DA60B1FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.m in Sources */,
+				826FAFAE1FE7913D009C275C /* JDLPageContentView.m in Sources */,
 				8212B4DC1FDE38F600DBCBCF /* JDLHeadView.m in Sources */,
 				8212B4EA1FDE5C6500DBCBCF /* UIButton+JDLTouch.m in Sources */,
 				824960CB1FE0CFD3004DF289 /* JDLNavigationController.m in Sources */,
