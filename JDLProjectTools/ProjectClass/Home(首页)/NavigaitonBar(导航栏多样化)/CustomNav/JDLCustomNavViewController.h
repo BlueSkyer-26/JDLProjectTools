@@ -6,8 +6,8 @@
 //  Copyright © 2017年 BlueSkyer-25. All rights reserved.
 //
 
-#import "JDLBaseViewController.h"
+#import "JDLBaseCustomNavViewController.h"
 
-@interface JDLCustomNavViewController : JDLBaseViewController
+@interface JDLCustomNavViewController : JDLBaseCustomNavViewController
 
 @end

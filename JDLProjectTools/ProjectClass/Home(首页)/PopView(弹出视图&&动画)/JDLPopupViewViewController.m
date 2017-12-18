@@ -27,6 +27,7 @@
         
     }];
     [buttonCenter JDL_imagePositionStyle:JDLImagePositionStyleTop spacing:2];
+    [buttonCenter JDL_setCornerRadiusFlout:KTwoHalfMultiplication(buttonCenter.height)];
     [self.view addSubview:buttonCenter];
     
     JDLAnimationButton *buttonBottom =[JDLAnimationButton buttonWithType:UIButtonTypeCustom frame:CGRectMake(KLeftPadding, buttonCenter.bottom +KLeftPadding, KScreenWidth -KTwoMultiplication(KLeftPadding), 60) title:@"PopupViewBottom" titleColor:KWhiteColor backgroundColor:KThemeColor imageName:@"Icon-tabbar" andBlock:^{
@@ -44,6 +45,7 @@
         
     }];
     [buttonBottom JDL_imagePositionStyle:JDLImagePositionStyleTop spacing:2];
+    [buttonBottom JDL_setCornerRadiusFlout:KTwoHalfMultiplication(buttonBottom.height)];
     [self.view addSubview:buttonBottom];
     
     JDLAnimationButton *buttonTop =[JDLAnimationButton buttonWithType:UIButtonTypeCustom frame:CGRectMake(KLeftPadding, buttonBottom.bottom +KLeftPadding, KScreenWidth -KTwoMultiplication(KLeftPadding), 60) title:@"PopupViewTop" titleColor:KWhiteColor backgroundColor:KThemeColor imageName:@"Icon-tabbar" andBlock:^{
@@ -56,6 +58,7 @@
         
     }];
     [buttonTop JDL_imagePositionStyle:JDLImagePositionStyleTop spacing:2];
+    [buttonTop JDL_setCornerRadiusFlout:KTwoHalfMultiplication(buttonTop.height)];
     [self.view addSubview:buttonTop];
     
     JDLAnimationButton *buttonLeft =[JDLAnimationButton buttonWithType:UIButtonTypeCustom frame:CGRectMake(KLeftPadding, buttonTop.bottom +KLeftPadding, KScreenWidth -KTwoMultiplication(KLeftPadding), 60) title:@"PopupViewLeft" titleColor:KWhiteColor backgroundColor:KThemeColor imageName:@"Icon-tabbar" andBlock:^{
@@ -68,6 +71,7 @@
         
     }];
     [buttonLeft JDL_imagePositionStyle:JDLImagePositionStyleBottom spacing:2];
+    [buttonLeft JDL_setCornerRadiusFlout:KTwoHalfMultiplication(buttonLeft.height)];
     [self.view addSubview:buttonLeft];
     
     JDLAnimationButton *buttonRight =[JDLAnimationButton buttonWithType:UIButtonTypeCustom frame:CGRectMake(KLeftPadding, buttonLeft.bottom +KLeftPadding, KScreenWidth -KTwoMultiplication(KLeftPadding), 60) title:@"PopupViewRight" titleColor:KWhiteColor backgroundColor:KThemeColor imageName:@"Icon-tabbar" andBlock:^{

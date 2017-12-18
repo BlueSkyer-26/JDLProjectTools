@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		5B8EE81D8A3CD0E5494EAB41 /* libPods-JDLProjectTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 133FB68D3277D1CF8B35FD6D /* libPods-JDLProjectTools.a */; };
 		820DA5F41FE3C4DD00F9C55B /* JDLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA5F31FE3C4DD00F9C55B /* JDLBaseViewController.m */; };
+		820DA5FB1FE7556000F9C55B /* JDLMoveNavToStautarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA5FA1FE7556000F9C55B /* JDLMoveNavToStautarViewController.m */; };
+		820DA5FE1FE755D600F9C55B /* JDLMoveFromYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA5FD1FE755D600F9C55B /* JDLMoveFromYViewController.m */; };
+		820DA6021FE75CA400F9C55B /* JDLBaseCustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA6011FE75CA400F9C55B /* JDLBaseCustomNavViewController.m */; };
+		820DA6081FE75DB400F9C55B /* JDLCustomBgImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA6071FE75DB400F9C55B /* JDLCustomBgImageViewController.m */; };
+		820DA60B1FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA60A1FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.m */; };
 		8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */; };
 		8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212B47D1FDAD9CE00DBCBCF /* ViewController.m */; };
 		8212B4811FDAD9CE00DBCBCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8212B47F1FDAD9CE00DBCBCF /* Main.storyboard */; };
@@ -72,6 +77,16 @@
 		799B371B6FD615AA998852AD /* Pods-JDLProjectTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLProjectTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDLProjectTools/Pods-JDLProjectTools.release.xcconfig"; sourceTree = "<group>"; };
 		820DA5F21FE3C4DD00F9C55B /* JDLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLBaseViewController.h; sourceTree = "<group>"; };
 		820DA5F31FE3C4DD00F9C55B /* JDLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLBaseViewController.m; sourceTree = "<group>"; };
+		820DA5F91FE7556000F9C55B /* JDLMoveNavToStautarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMoveNavToStautarViewController.h; sourceTree = "<group>"; };
+		820DA5FA1FE7556000F9C55B /* JDLMoveNavToStautarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMoveNavToStautarViewController.m; sourceTree = "<group>"; };
+		820DA5FC1FE755D600F9C55B /* JDLMoveFromYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMoveFromYViewController.h; sourceTree = "<group>"; };
+		820DA5FD1FE755D600F9C55B /* JDLMoveFromYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMoveFromYViewController.m; sourceTree = "<group>"; };
+		820DA6001FE75CA400F9C55B /* JDLBaseCustomNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLBaseCustomNavViewController.h; sourceTree = "<group>"; };
+		820DA6011FE75CA400F9C55B /* JDLBaseCustomNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLBaseCustomNavViewController.m; sourceTree = "<group>"; };
+		820DA6061FE75DB400F9C55B /* JDLCustomBgImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCustomBgImageViewController.h; sourceTree = "<group>"; };
+		820DA6071FE75DB400F9C55B /* JDLCustomBgImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLCustomBgImageViewController.m; sourceTree = "<group>"; };
+		820DA6091FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCustomNavColorChangeViewController.h; sourceTree = "<group>"; };
+		820DA60A1FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLCustomNavColorChangeViewController.m; sourceTree = "<group>"; };
 		8212B4761FDAD9CE00DBCBCF /* JDLProjectTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDLProjectTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8212B4791FDAD9CE00DBCBCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8212B47A1FDAD9CE00DBCBCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -188,6 +203,28 @@
 				799B371B6FD615AA998852AD /* Pods-JDLProjectTools.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		820DA5F51FE7547200F9C55B /* DemoList */ = {
+			isa = PBXGroup;
+			children = (
+				820DA5F91FE7556000F9C55B /* JDLMoveNavToStautarViewController.h */,
+				820DA5FA1FE7556000F9C55B /* JDLMoveNavToStautarViewController.m */,
+				820DA5FC1FE755D600F9C55B /* JDLMoveFromYViewController.h */,
+				820DA5FD1FE755D600F9C55B /* JDLMoveFromYViewController.m */,
+			);
+			path = DemoList;
+			sourceTree = "<group>";
+		};
+		820DA5FF1FE75C2000F9C55B /* DemoList */ = {
+			isa = PBXGroup;
+			children = (
+				820DA6061FE75DB400F9C55B /* JDLCustomBgImageViewController.h */,
+				820DA6071FE75DB400F9C55B /* JDLCustomBgImageViewController.m */,
+				820DA6091FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.h */,
+				820DA60A1FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.m */,
+			);
+			path = DemoList;
 			sourceTree = "<group>";
 		};
 		8212B46D1FDAD9CE00DBCBCF = {
@@ -479,6 +516,9 @@
 			children = (
 				824960F11FE11E95004DF289 /* JDLCustomNavViewController.h */,
 				824960F21FE11E95004DF289 /* JDLCustomNavViewController.m */,
+				820DA6001FE75CA400F9C55B /* JDLBaseCustomNavViewController.h */,
+				820DA6011FE75CA400F9C55B /* JDLBaseCustomNavViewController.m */,
+				820DA5FF1FE75C2000F9C55B /* DemoList */,
 			);
 			path = CustomNav;
 			sourceTree = "<group>";
@@ -488,6 +528,7 @@
 			children = (
 				824960F41FE11EA0004DF289 /* JDLMoveNavViewController.h */,
 				824960F51FE11EA0004DF289 /* JDLMoveNavViewController.m */,
+				820DA5F51FE7547200F9C55B /* DemoList */,
 			);
 			path = MoveNav;
 			sourceTree = "<group>";
@@ -710,12 +751,15 @@
 				8212B4C51FDE1F9100DBCBCF /* JDLTabBarController.m in Sources */,
 				8212B4CB1FDE269000DBCBCF /* JDLMessageViewController.m in Sources */,
 				8212B4BD1FDD3DC500DBCBCF /* JDLUserMessageManager.m in Sources */,
+				820DA6021FE75CA400F9C55B /* JDLBaseCustomNavViewController.m in Sources */,
 				8212B4BA1FDD3DA800DBCBCF /* JDLToolsManager.m in Sources */,
 				824960D51FE0F039004DF289 /* AppDelegate+JDLAppService.m in Sources */,
 				824960FE1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m in Sources */,
 				824960E21FE11167004DF289 /* JDLNavigationTabBarController.m in Sources */,
+				820DA6081FE75DB400F9C55B /* JDLCustomBgImageViewController.m in Sources */,
 				82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */,
 				8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */,
+				820DA5FB1FE7556000F9C55B /* JDLMoveNavToStautarViewController.m in Sources */,
 				8212B4C81FDE267F00DBCBCF /* JDLMineViewController.m in Sources */,
 				824960E61FE11227004DF289 /* JDLButtonViewController.m in Sources */,
 				824960F31FE11E95004DF289 /* JDLCustomNavViewController.m in Sources */,
@@ -729,6 +773,8 @@
 				8212B4E01FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m in Sources */,
 				8212B4E31FDE4B1B00DBCBCF /* JDLAnimationButton.m in Sources */,
 				824960EA1FE11387004DF289 /* JDLPopupViewViewController.m in Sources */,
+				820DA5FE1FE755D600F9C55B /* JDLMoveFromYViewController.m in Sources */,
+				820DA60B1FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.m in Sources */,
 				8212B4DC1FDE38F600DBCBCF /* JDLHeadView.m in Sources */,
 				8212B4EA1FDE5C6500DBCBCF /* UIButton+JDLTouch.m in Sources */,
 				824960CB1FE0CFD3004DF289 /* JDLNavigationController.m in Sources */,
