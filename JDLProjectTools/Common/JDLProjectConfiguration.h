@@ -9,6 +9,9 @@
 #ifndef JDLProject_Configuration_h
 #define JDLProject_Configuration_h
 
+#define KPlayMusicNofication @"KPlayMusicNofication"
+
+
 #pragma mark ------ 屏幕 -------
 #define KScreenWidth   [[UIScreen mainScreen] bounds].size.width
 #define KScreenHeight  [[UIScreen mainScreen] bounds].size.height
@@ -70,6 +73,19 @@
 #define KSYSTEMFONT(FONTSIZE)     [UIFont systemFontOfSize:KAdaptX(FONTSIZE)]
 #define KFONT(NAME, FONTSIZE)     [UIFont fontWithName:(NAME) size:KAdaptX(FONTSIZE)]
 
+#pragma mark ===========数据验证===========--BlueSkyer25
+#define KStrValid(f) (f!=nil && [f isKindOfClass:[NSString class]] && ![f isEqualToString:@""])
+#define KSafeStr(f) (KStrValid(f) ? f:@"")
+#define KHasString(str,key) ([str rangeOfString:key].location!=NSNotFound)
+
+#define KValidStr(f) KStrValid(f)
+#define KValidDictionary(f) (f!=nil && [f isKindOfClass:[NSDictionary class]])
+#define KValidArray(f) (f!=nil && [f isKindOfClass:[NSArray class]] && [f count]>0)
+#define KValidNum(f) (f!=nil && [f isKindOfClass:[NSNumber class]])
+#define KValidClass(f,cls) (f!=nil && [f isKindOfClass:[cls class]])
+#define KValidData(f) (f!=nil && [f isKindOfClass:[NSData class]])
+#define KSafeString(__X__)        [__X__ isKindOfClass:[NSNull class]] ? @"" : [NSString stringWithFormat:@"%@", (__X__)]
+
 #pragma mark ===========获取系统对象===========--BlueSkyer25
 
 #define KApplication        [UIApplication sharedApplication]
@@ -81,7 +97,7 @@
 
 #pragma mark ===========通知===========--BlueSkyer25
 //发送通知
-#define KPostNotification(name,obj) [[NSNotificationCenter defaultCenter] postNotificationName:name object:obj];
+#define KPostNotification(name,obj,info) [[NSNotificationCenter defaultCenter] postNotificationName:name object:obj userInfo:info];
 
 #pragma mark ===========设置图片===========--BlueSkyer25
 #define KImageName(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
@@ -108,6 +124,8 @@
 #define KTabBarHeight (KIS_IPHONE_X ? (49.f+34.f) : 49.f)
 // bottom 安全高度
 #define KSafeHeight  (KIS_IPHONE_X ? 34.f: 0)
+// segment height 选项卡高度
+#define KSegmentHeight  44.f
 
 
 #define KIS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)

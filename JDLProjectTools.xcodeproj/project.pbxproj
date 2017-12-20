@@ -57,6 +57,21 @@
 		826FAFAE1FE7913D009C275C /* JDLPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFAD1FE7913D009C275C /* JDLPageContentView.m */; };
 		826FAFB11FE79189009C275C /* JDLPageContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFB01FE79189009C275C /* JDLPageContentScrollView.m */; };
 		826FAFB51FE791EF009C275C /* UIView+JDLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFB41FE791EF009C275C /* UIView+JDLFrame.m */; };
+		826FAFB91FE79A0B009C275C /* JDLDetailMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFB81FE79A0B009C275C /* JDLDetailMusicViewController.m */; };
+		826FAFC71FE7A877009C275C /* NSFileManager+ZBPathMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFC21FE7A86F009C275C /* NSFileManager+ZBPathMethod.m */; };
+		826FAFC81FE7A87A009C275C /* ZBCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFC11FE7A86F009C275C /* ZBCacheManager.m */; };
+		826FAFC91FE7A880009C275C /* ZBRequestEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFBD1FE7A86F009C275C /* ZBRequestEngine.m */; };
+		826FAFCA1FE7A883009C275C /* ZBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFC61FE7A870009C275C /* ZBRequestManager.m */; };
+		826FAFCB1FE7A886009C275C /* ZBURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFBB1FE7A86F009C275C /* ZBURLRequest.m */; };
+		826FAFCF1FE7B5E8009C275C /* JDLMusicApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFCE1FE7B5E8009C275C /* JDLMusicApi.m */; };
+		826FAFD21FE7B922009C275C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFD11FE7B91E009C275C /* Foundation+Log.m */; };
+		826FAFD91FE8D47A009C275C /* JDLMusicListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFD81FE8D47A009C275C /* JDLMusicListModel.m */; };
+		826FAFDC1FE8D49A009C275C /* JDLMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFDB1FE8D49A009C275C /* JDLMusicCell.m */; };
+		826FAFE21FE8D7C3009C275C /* UIScrollView+JDLEmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFDF1FE8D6E1009C275C /* UIScrollView+JDLEmptyData.m */; };
+		826FAFE31FE8D7C6009C275C /* UIScrollView+JDLRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFE11FE8D6E2009C275C /* UIScrollView+JDLRefresh.m */; };
+		826FAFE91FE93447009C275C /* JDLMusicRotationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFE81FE93447009C275C /* JDLMusicRotationImageView.m */; };
+		826FAFEC1FE93601009C275C /* JDLBottomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFEB1FE93601009C275C /* JDLBottomMenuView.m */; };
+		826FAFF01FE93C1B009C275C /* JDLMusicPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFEF1FE93C1B009C275C /* JDLMusicPlayerManager.m */; };
 		82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */; };
 		82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */; };
 /* End PBXBuildFile section */
@@ -187,6 +202,37 @@
 		826FAFB31FE791EF009C275C /* UIView+JDLFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JDLFrame.h"; sourceTree = "<group>"; };
 		826FAFB41FE791EF009C275C /* UIView+JDLFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDLFrame.m"; sourceTree = "<group>"; };
 		826FAFB61FE79262009C275C /* JDLPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLPageView.h; sourceTree = "<group>"; };
+		826FAFB71FE79A0B009C275C /* JDLDetailMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLDetailMusicViewController.h; sourceTree = "<group>"; };
+		826FAFB81FE79A0B009C275C /* JDLDetailMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLDetailMusicViewController.m; sourceTree = "<group>"; };
+		826FAFBB1FE7A86F009C275C /* ZBURLRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBURLRequest.m; sourceTree = "<group>"; };
+		826FAFBC1FE7A86F009C275C /* ZBURLRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBURLRequest.h; sourceTree = "<group>"; };
+		826FAFBD1FE7A86F009C275C /* ZBRequestEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBRequestEngine.m; sourceTree = "<group>"; };
+		826FAFBE1FE7A86F009C275C /* ZBRequestConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBRequestConst.h; sourceTree = "<group>"; };
+		826FAFBF1FE7A86F009C275C /* NSFileManager+ZBPathMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ZBPathMethod.h"; sourceTree = "<group>"; };
+		826FAFC01FE7A86F009C275C /* ZBNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBNetworking.h; sourceTree = "<group>"; };
+		826FAFC11FE7A86F009C275C /* ZBCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCacheManager.m; sourceTree = "<group>"; };
+		826FAFC21FE7A86F009C275C /* NSFileManager+ZBPathMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ZBPathMethod.m"; sourceTree = "<group>"; };
+		826FAFC31FE7A86F009C275C /* ZBRequestEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBRequestEngine.h; sourceTree = "<group>"; };
+		826FAFC41FE7A86F009C275C /* ZBCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCacheManager.h; sourceTree = "<group>"; };
+		826FAFC51FE7A86F009C275C /* ZBRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBRequestManager.h; sourceTree = "<group>"; };
+		826FAFC61FE7A870009C275C /* ZBRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBRequestManager.m; sourceTree = "<group>"; };
+		826FAFCD1FE7B5E8009C275C /* JDLMusicApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicApi.h; sourceTree = "<group>"; };
+		826FAFCE1FE7B5E8009C275C /* JDLMusicApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicApi.m; sourceTree = "<group>"; };
+		826FAFD11FE7B91E009C275C /* Foundation+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		826FAFD71FE8D47A009C275C /* JDLMusicListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicListModel.h; sourceTree = "<group>"; };
+		826FAFD81FE8D47A009C275C /* JDLMusicListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicListModel.m; sourceTree = "<group>"; };
+		826FAFDA1FE8D49A009C275C /* JDLMusicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicCell.h; sourceTree = "<group>"; };
+		826FAFDB1FE8D49A009C275C /* JDLMusicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicCell.m; sourceTree = "<group>"; };
+		826FAFDE1FE8D6E1009C275C /* UIScrollView+JDLEmptyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+JDLEmptyData.h"; sourceTree = "<group>"; };
+		826FAFDF1FE8D6E1009C275C /* UIScrollView+JDLEmptyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+JDLEmptyData.m"; sourceTree = "<group>"; };
+		826FAFE01FE8D6E1009C275C /* UIScrollView+JDLRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+JDLRefresh.h"; sourceTree = "<group>"; };
+		826FAFE11FE8D6E2009C275C /* UIScrollView+JDLRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+JDLRefresh.m"; sourceTree = "<group>"; };
+		826FAFE71FE93447009C275C /* JDLMusicRotationImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicRotationImageView.h; sourceTree = "<group>"; };
+		826FAFE81FE93447009C275C /* JDLMusicRotationImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicRotationImageView.m; sourceTree = "<group>"; };
+		826FAFEA1FE93601009C275C /* JDLBottomMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLBottomMenuView.h; sourceTree = "<group>"; };
+		826FAFEB1FE93601009C275C /* JDLBottomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLBottomMenuView.m; sourceTree = "<group>"; };
+		826FAFEE1FE93C1B009C275C /* JDLMusicPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicPlayerManager.h; sourceTree = "<group>"; };
+		826FAFEF1FE93C1B009C275C /* JDLMusicPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicPlayerManager.m; sourceTree = "<group>"; };
 		82FF319A1FE26E8B00E67B18 /* JDLQQAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQAppViewController.h; sourceTree = "<group>"; };
 		82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLQQAppViewController.m; sourceTree = "<group>"; };
 		82FF319D1FE277DB00E67B18 /* JDLQQMyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQMyMessageViewController.h; sourceTree = "<group>"; };
@@ -320,6 +366,9 @@
 		8212B4AB1FDD0EA200DBCBCF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				826FAFDD1FE8D690009C275C /* JDLRefreshEmptyData(下拉上拉空数据展示) */,
+				826FAFD01FE7B8EE009C275C /* JDLLogText(转码输出中文) */,
+				826FAFBA1FE7A835009C275C /* JDLRequest(网络请求+缓存) */,
 				826FAFA31FE78FE0009C275C /* JDLCustomSegment(滑动选项卡) */,
 				824960D61FE1026F004DF289 /* TableviewCellAnimation(cell动画) */,
 				824960CC1FE0D871004DF289 /* Navigation(自定义多样化导航栏) */,
@@ -595,6 +644,11 @@
 			children = (
 				826FAFA01FE78735009C275C /* JDLMusicViewController.h */,
 				826FAFA11FE78735009C275C /* JDLMusicViewController.m */,
+				826FAFED1FE93BF9009C275C /* MusicManager */,
+				826FAFD61FE8D452009C275C /* MusicAPI */,
+				826FAFD51FE8D436009C275C /* Controller */,
+				826FAFD41FE8D432009C275C /* View */,
+				826FAFD31FE8D42A009C275C /* Model */,
 			);
 			path = "Music(音乐播放)";
 			sourceTree = "<group>";
@@ -639,6 +693,93 @@
 				826FAFB41FE791EF009C275C /* UIView+JDLFrame.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		826FAFBA1FE7A835009C275C /* JDLRequest(网络请求+缓存) */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFBF1FE7A86F009C275C /* NSFileManager+ZBPathMethod.h */,
+				826FAFC21FE7A86F009C275C /* NSFileManager+ZBPathMethod.m */,
+				826FAFC41FE7A86F009C275C /* ZBCacheManager.h */,
+				826FAFC11FE7A86F009C275C /* ZBCacheManager.m */,
+				826FAFC01FE7A86F009C275C /* ZBNetworking.h */,
+				826FAFBE1FE7A86F009C275C /* ZBRequestConst.h */,
+				826FAFC31FE7A86F009C275C /* ZBRequestEngine.h */,
+				826FAFBD1FE7A86F009C275C /* ZBRequestEngine.m */,
+				826FAFC51FE7A86F009C275C /* ZBRequestManager.h */,
+				826FAFC61FE7A870009C275C /* ZBRequestManager.m */,
+				826FAFBC1FE7A86F009C275C /* ZBURLRequest.h */,
+				826FAFBB1FE7A86F009C275C /* ZBURLRequest.m */,
+			);
+			path = "JDLRequest(网络请求+缓存)";
+			sourceTree = "<group>";
+		};
+		826FAFD01FE7B8EE009C275C /* JDLLogText(转码输出中文) */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFD11FE7B91E009C275C /* Foundation+Log.m */,
+			);
+			path = "JDLLogText(转码输出中文)";
+			sourceTree = "<group>";
+		};
+		826FAFD31FE8D42A009C275C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFD71FE8D47A009C275C /* JDLMusicListModel.h */,
+				826FAFD81FE8D47A009C275C /* JDLMusicListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		826FAFD41FE8D432009C275C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFDA1FE8D49A009C275C /* JDLMusicCell.h */,
+				826FAFDB1FE8D49A009C275C /* JDLMusicCell.m */,
+				826FAFEA1FE93601009C275C /* JDLBottomMenuView.h */,
+				826FAFEB1FE93601009C275C /* JDLBottomMenuView.m */,
+				826FAFE71FE93447009C275C /* JDLMusicRotationImageView.h */,
+				826FAFE81FE93447009C275C /* JDLMusicRotationImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		826FAFD51FE8D436009C275C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFB71FE79A0B009C275C /* JDLDetailMusicViewController.h */,
+				826FAFB81FE79A0B009C275C /* JDLDetailMusicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		826FAFD61FE8D452009C275C /* MusicAPI */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFCD1FE7B5E8009C275C /* JDLMusicApi.h */,
+				826FAFCE1FE7B5E8009C275C /* JDLMusicApi.m */,
+			);
+			path = MusicAPI;
+			sourceTree = "<group>";
+		};
+		826FAFDD1FE8D690009C275C /* JDLRefreshEmptyData(下拉上拉空数据展示) */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFDE1FE8D6E1009C275C /* UIScrollView+JDLEmptyData.h */,
+				826FAFDF1FE8D6E1009C275C /* UIScrollView+JDLEmptyData.m */,
+				826FAFE01FE8D6E1009C275C /* UIScrollView+JDLRefresh.h */,
+				826FAFE11FE8D6E2009C275C /* UIScrollView+JDLRefresh.m */,
+			);
+			path = "JDLRefreshEmptyData(下拉上拉空数据展示)";
+			sourceTree = "<group>";
+		};
+		826FAFED1FE93BF9009C275C /* MusicManager */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFEE1FE93C1B009C275C /* JDLMusicPlayerManager.h */,
+				826FAFEF1FE93C1B009C275C /* JDLMusicPlayerManager.m */,
+			);
+			path = MusicManager;
 			sourceTree = "<group>";
 		};
 		88BB3892BD6F1DA5B50E8C0D /* Frameworks */ = {
@@ -846,40 +987,55 @@
 				8212B4C51FDE1F9100DBCBCF /* JDLTabBarController.m in Sources */,
 				8212B4CB1FDE269000DBCBCF /* JDLMessageViewController.m in Sources */,
 				826FAF9D1FE7746F009C275C /* KLCPopup.m in Sources */,
+				826FAFDC1FE8D49A009C275C /* JDLMusicCell.m in Sources */,
 				826FAFB11FE79189009C275C /* JDLPageContentScrollView.m in Sources */,
 				8212B4BD1FDD3DC500DBCBCF /* JDLUserMessageManager.m in Sources */,
 				820DA6021FE75CA400F9C55B /* JDLBaseCustomNavViewController.m in Sources */,
+				826FAFE31FE8D7C6009C275C /* UIScrollView+JDLRefresh.m in Sources */,
 				826FAFB51FE791EF009C275C /* UIView+JDLFrame.m in Sources */,
 				8212B4BA1FDD3DA800DBCBCF /* JDLToolsManager.m in Sources */,
 				824960D51FE0F039004DF289 /* AppDelegate+JDLAppService.m in Sources */,
 				826FAFA91FE790BB009C275C /* JDLPageTitleView.m in Sources */,
 				824960FE1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m in Sources */,
 				824960E21FE11167004DF289 /* JDLNavigationTabBarController.m in Sources */,
+				826FAFC81FE7A87A009C275C /* ZBCacheManager.m in Sources */,
 				820DA6081FE75DB400F9C55B /* JDLCustomBgImageViewController.m in Sources */,
 				826FAFA21FE78735009C275C /* JDLMusicViewController.m in Sources */,
 				82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */,
+				826FAFC71FE7A877009C275C /* NSFileManager+ZBPathMethod.m in Sources */,
 				8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */,
+				826FAFEC1FE93601009C275C /* JDLBottomMenuView.m in Sources */,
 				820DA5FB1FE7556000F9C55B /* JDLMoveNavToStautarViewController.m in Sources */,
 				8212B4C81FDE267F00DBCBCF /* JDLMineViewController.m in Sources */,
+				826FAFCF1FE7B5E8009C275C /* JDLMusicApi.m in Sources */,
+				826FAFC91FE7A880009C275C /* ZBRequestEngine.m in Sources */,
 				824960E61FE11227004DF289 /* JDLButtonViewController.m in Sources */,
 				824960F31FE11E95004DF289 /* JDLCustomNavViewController.m in Sources */,
 				824960D21FE0D8BD004DF289 /* JDLCustomNavigationBar.m in Sources */,
 				8212B4F31FDF833200DBCBCF /* UIButton+JDLLayout.m in Sources */,
+				826FAFD91FE8D47A009C275C /* JDLMusicListModel.m in Sources */,
 				824960F01FE11E87004DF289 /* JDLCommonNavViewController.m in Sources */,
 				8212B4D51FDE2DA200DBCBCF /* JDLCenterViewController.m in Sources */,
 				826FAFA61FE79012009C275C /* JDLPageTitleViewConfigure.m in Sources */,
 				8212B4891FDAD9CE00DBCBCF /* main.m in Sources */,
 				82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */,
 				8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */,
+				826FAFD21FE7B922009C275C /* Foundation+Log.m in Sources */,
+				826FAFB91FE79A0B009C275C /* JDLDetailMusicViewController.m in Sources */,
+				826FAFF01FE93C1B009C275C /* JDLMusicPlayerManager.m in Sources */,
+				826FAFCB1FE7A886009C275C /* ZBURLRequest.m in Sources */,
 				8212B4E01FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m in Sources */,
 				8212B4E31FDE4B1B00DBCBCF /* JDLAnimationButton.m in Sources */,
 				824960EA1FE11387004DF289 /* JDLPopupViewViewController.m in Sources */,
 				820DA5FE1FE755D600F9C55B /* JDLMoveFromYViewController.m in Sources */,
+				826FAFCA1FE7A883009C275C /* ZBRequestManager.m in Sources */,
 				820DA60B1FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.m in Sources */,
 				826FAFAE1FE7913D009C275C /* JDLPageContentView.m in Sources */,
 				8212B4DC1FDE38F600DBCBCF /* JDLHeadView.m in Sources */,
+				826FAFE21FE8D7C3009C275C /* UIScrollView+JDLEmptyData.m in Sources */,
 				8212B4EA1FDE5C6500DBCBCF /* UIButton+JDLTouch.m in Sources */,
 				824960CB1FE0CFD3004DF289 /* JDLNavigationController.m in Sources */,
+				826FAFE91FE93447009C275C /* JDLMusicRotationImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

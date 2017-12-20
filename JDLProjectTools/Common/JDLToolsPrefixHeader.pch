@@ -10,6 +10,7 @@
 #define JDLToolsPrefixHeader_pch
 
 #import "JDLAllCommonClass.h"
+#import "ZBNetworking.h"                        //带有缓存功能的网络请求
 
 #pragma mark ------ JDLLog -------
 #ifdef DEBUG

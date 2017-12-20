@@ -43,6 +43,7 @@
 #import "JDLProjectConfiguration.h"
 
 #pragma mark ------ Manager -------
+//#import "ZBNetworking.h"                        //带有缓存功能的网络请求
 #import "JDLPopContentManager.h"                //弹出视图管理类
 
 #pragma mark ------ Category -------
@@ -50,8 +51,11 @@
 #import "UIButton+JDLLayout.h"                  //button 图片文字位置自定义
 #import "UIButton+JDLCountDown.h"               //button 带有倒计时
 #import "UIButton+JDLImagePosition.h"           //button 图片文字位置自定义 设置frame的方式
+#import "UIScrollView+JDLRefresh.h"             //下拉刷新  上拉加载
+#import "UIScrollView+JDLEmptyData.h"           //无数据显示
 
 #pragma mark ------ Custom -------
+#import "JDLPageView.h"                         //滑动选项卡
 #import "JDLHeadView.h"
 #import "JDLAnimationButton.h"                  //带有动画button
 #import "JDLNavigationBar.h"                    //导航渐变 颜色 状态栏
@@ -62,8 +66,8 @@
 #import <YYKit.h>
 #import <Masonry.h>
 #import <MJRefresh.h>
-#import <YBPopupMenu.h>
 #import <MJExtension.h>
+#import <YBPopupMenu.h>
 #import <ReactiveCocoa.h>
 #import <IQKeyboardManager.h>
 

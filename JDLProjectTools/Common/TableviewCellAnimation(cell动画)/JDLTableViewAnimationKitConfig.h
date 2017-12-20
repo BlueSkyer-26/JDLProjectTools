@@ -10,9 +10,9 @@
 #define JDLTableViewAnimationKitConfig_h
 
 typedef NS_ENUM(NSInteger,JDLTableViewAnimationType){
-    JDLTableViewAnimationTypeMove = 0,
-    JDLTableViewAnimationTypeAlpha,
-    JDLTableViewAnimationTypeFall,
+    JDLTableViewAnimationTypeMove = 0,    //
+    JDLTableViewAnimationTypeAlpha,       //从上往下依次加载
+    JDLTableViewAnimationTypeFall,        //从下往上依次叠加加载
     JDLTableViewAnimationTypeShake,
     JDLTableViewAnimationTypeOverTurn,
     JDLTableViewAnimationTypeToTop,

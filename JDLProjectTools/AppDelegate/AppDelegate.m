@@ -27,6 +27,9 @@
     [self adaptationNewIOS];        //适配iOS11以上版本
     [self configureBoardManager];   //键盘弹起收回统一处理
     
+    NSString *cachePath = [[ZBCacheManager sharedInstance]ZBKitPath];
+    NSLog(@"cachePath = %@",cachePath);
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
