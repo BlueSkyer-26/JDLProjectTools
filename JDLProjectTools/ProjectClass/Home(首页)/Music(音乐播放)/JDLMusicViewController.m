@@ -8,23 +8,29 @@
 
 #import "JDLMusicViewController.h"
 
-#import "JDLMusicListModel.h"
+#import "JDLMusicPlayModel.h"
 
 #import "JDLBottomMenuView.h"
 
 #import "JDLMusicPlayerManager.h"
 
 #import "JDLDetailMusicViewController.h"
+#import "JDLMusicLrcDetailViewController.h"
+
+JDLMusicPlayerManager *playerManager;
 
 @interface JDLMusicViewController ()<JDLPageTitleViewDelegate,JDLPageContentViewDelegate>
 {
-    JDLMusicPlayerManager *playerManager;
+    JDLMusicPlayModel *playMusicModel;
+    JDLDetailMusicViewController *detailMusicViewController;
 }
 @property (nonatomic,strong) JDLPageTitleView     *pageTitleView;
 @property (nonatomic,strong) JDLPageContentView   *pageContentView;
 @property (nonatomic,strong) JDLBottomMenuView    *bottomMenuView;
 
 @property (nonatomic,strong) NSMutableArray       *currentChannelsArray;
+
+@property (nonatomic, strong) id playerTimeObserver;  //播放时间
 @end
 
 @implementation JDLMusicViewController
@@ -33,9 +39,10 @@
     [super viewDidLoad];
     
     playerManager =[JDLMusicPlayerManager shareManager];
+    playMusicModel =[JDLMusicPlayModel shareManager];
     
     [self createView];
-
+    
 }
 
 -(void)createView{
@@ -43,62 +50,96 @@
     [self.view addSubview:self.pageContentView];
     [self.view addSubview:self.bottomMenuView];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playMusicNofication:) name:KPlayMusicNofication object:nil];
+    // 设置KVO
+    [playMusicModel addObserver:self forKeyPath:@"selectIndex" options:NSKeyValueObservingOptionOld
+     |NSKeyValueObservingOptionNew context:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollViewMoveNofication) name:KScrollViewMoveNofication object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollViewMoveEndNofication) name:KScrollViewMoveEndNofication object:nil];
 }
 
--(void)playMusicNofication:(NSNotification *)notification{
+#pragma mark - KVO
+-(void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     
-    JDLLog(@"萨瓦迪卡===%@",notification.userInfo[@"model"]);
-    JDLMusicListModel *model =notification.userInfo[@"model"];
-    
-    NSString *path = [@"http://tingapi.ting.baidu.com/v1/restserver/ting?from=qianqian&version=2.1.0&method=baidu.ting.song.play&songid="  stringByAppendingString:model.song_id];
-    [ZBRequestManager requestWithConfig:^(ZBURLRequest *request){
-        request.urlString =path;
-        request.methodType=ZBMethodTypeGET;//默认为GET
-        request.apiType=ZBRequestTypeCache;//默认为ZBRequestTypeRefresh
-        request.timeoutInterval=10;
-    }  success:^(id responseObject,apiType type){
-        
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-      
-        NSDictionary *array = [dict objectForKey:@"bitrate"];
+    if ([keyPath isEqual: @"selectIndex"]) {
+        [self playSongSetting];
+    }
+}
 
-        NSString *url = [array objectForKey:@"file_link"];
-        [self playMusicWith:url model:model];
-        JDLLog(@"萨瓦迪卡快快快快快快===%@",url);
-        
-    } failed:^(NSError *error){
-        if (error.code==NSURLErrorCancelled)return;
-
+#pragma mark ------ 通知 -------
+-(void)scrollViewMoveNofication{
+    [UIView animateWithDuration:0.6 animations:^{
+        _bottomMenuView.timeLabel.alpha =0;
     }];
-    
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//
-//    NSString *path = [@"http://tingapi.ting.baidu.com/v1/restserver/ting?from=qianqian&version=2.1.0&method=baidu.ting.song.play&songid="  stringByAppendingString:notification.userInfo[@"song_id"]];
-//
-//    [manager GET:path parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        if ([responseObject isKindOfClass:[NSDictionary class]])
-//        {
-//            NSDictionary *array = [responseObject objectForKey:@"bitrate"];
-//
-//            NSString *url = [array objectForKey:@"file_link"];
-//            [self playMusicWith:url];
-//            JDLLog(@"萨瓦迪卡快快快快快快===%@",url);
-//        }
-//
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        NSLog(@"error--%@",error);
-//    }];
+}
+-(void)scrollViewMoveEndNofication{
+    [UIView animateWithDuration:0.6 animations:^{
+        _bottomMenuView.timeLabel.alpha =1;
+    }];
 }
 
--(void)playMusicWith:(NSString *)url model:(JDLMusicListModel *)model{
-    [playerManager playMusicWithUrl:url];
+-(void)playSongSetting{
+
+    if (_playerTimeObserver != nil) {
+
+        [playerManager.avPlayer removeTimeObserver:_playerTimeObserver];
+        _playerTimeObserver = nil;
+
+        [playerManager.avPlayer.currentItem cancelPendingSeeks];
+        [playerManager.avPlayer.currentItem.asset cancelLoading];
+    }
+
+    [playerManager playMusicWithUrl:playMusicModel.file_link];
     [playerManager startPlay];
     [_bottomMenuView.iconImageView startRotating];
-    _bottomMenuView.musicName.text =model.title;
-    _bottomMenuView.authorName.text =model.author;
+    _bottomMenuView.musicName.text =playMusicModel.model.title;
+    _bottomMenuView.authorName.text =playMusicModel.model.author;
+    [_bottomMenuView.iconImageView setImageWithURL:[NSURL URLWithString:playMusicModel.model.pic_small] placeholder:KImageName(@"Icon-40")];
+    [_bottomMenuView.startBtn setBackgroundImage:KImageName(@"cm2_fm_btn_play_prs") forState:UIControlStateNormal];
+
+    [KNotificationCenter addObserver:self selector:@selector(nextMusicClick) name:AVPlayerItemDidPlayToEndTimeNotification object:playerManager.avPlayer.currentItem];
+    
+    _playerTimeObserver =[playerManager.avPlayer addPeriodicTimeObserverForInterval:CMTimeMake(1.0, 1.0) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+
+        CGFloat currentTime =CMTimeGetSeconds(time);
+
+
+        CMTime total =playerManager.avPlayer.currentItem.duration;
+        CGFloat totalTime =CMTimeGetSeconds(total);
+
+        _bottomMenuView.circleView.progress = currentTime/totalTime;
+        _bottomMenuView.timeLabel.text =KNSStringFormat(@"%@/%@",[JDLAutherManager secondsToString:currentTime],[JDLAutherManager secondsToString:totalTime]);
+        
+    }];
 }
 
+#pragma mark ------ 下一曲 -------
+-(void)nextMusicClick{
+
+    if (playMusicModel.selectIndex <playMusicModel.allMusicArray.count -1) {
+
+        [playMusicModel loadMusicWith:playMusicModel.allMusicArray[playMusicModel.selectIndex +1] index:playMusicModel.selectIndex +1];
+    }else{
+        //如果是最后一首，则从第一首播放
+        [playMusicModel loadMusicWith:playMusicModel.allMusicArray[0] index:0];
+    }
+   
+}
+
+#pragma mark ------ 上一曲 -------
+-(void)previousMusicClick{
+
+    if (playMusicModel.selectIndex <=playMusicModel.allMusicArray.count -1) {
+        
+        //如果是第一首，则从最后一首播放
+        if(playMusicModel.selectIndex ==0){
+            NSInteger allSongCount =playMusicModel.allMusicArray.count;
+            [playMusicModel loadMusicWith:playMusicModel.allMusicArray[allSongCount -1] index:allSongCount -1];
+        }else{
+            [playMusicModel loadMusicWith:playMusicModel.allMusicArray[playMusicModel.selectIndex -1] index:playMusicModel.selectIndex -1];
+        }
+    }
+}
 
 #pragma mark ------ pageView deleagate -------
 - (void)pageTitleView:(JDLPageTitleView *)pageTitleView selectedIndex:(NSInteger)selectedIndex {
@@ -132,11 +173,11 @@
         
         NSMutableArray *vcClassArray =[NSMutableArray array];
         for (int i=0; i < self.currentChannelsArray.count; i ++) {
-            JDLDetailMusicViewController *vc =[[JDLDetailMusicViewController alloc] init];
-            vc.channelTitle =self.currentChannelsArray[i];
+            detailMusicViewController =[[JDLDetailMusicViewController alloc] init];
+            detailMusicViewController.channelTitle =self.currentChannelsArray[i];
             /* 不能在这里设置颜色 否则全部加载*/
 //            vc.view.backgroundColor =KRANDOM_COLOR;
-            [vcClassArray addObject:vc];
+            [vcClassArray addObject:detailMusicViewController];
         }
 
         _pageContentView = [[JDLPageContentView alloc] initWithFrame:CGRectMake(0, _pageTitleView.bottom, KScreenWidth, KScreenHeight -_pageTitleView.bottom -KSafeHeight) parentVC:self childVCs:vcClassArray];
@@ -155,9 +196,74 @@
 
 -(JDLBottomMenuView *)bottomMenuView{
     if (!_bottomMenuView) {
+        WEAKSELF;
         _bottomMenuView =[[JDLBottomMenuView alloc] initWithFrame:CGRectMake(0, KScreenHeight -KAdaptY(60) -KSafeHeight, KScreenWidth, KAdaptY(60))];
+        _bottomMenuView.bottomButtonClickBlock = ^(NSInteger index,UIButton *btn) {
+            //24弹出歌词视图   25下一首   26开始暂停    27上一首
+            switch (index) {
+                case 24:{
+                    JDLMusicLrcDetailViewController *detailVC =[[JDLMusicLrcDetailViewController alloc] init];
+                    detailVC.view.backgroundColor =KOrangeColor;
+                    [weakSelf presentViewController:detailVC animated:YES completion:nil];
+                }
+                    
+                    break;
+                case 25:{
+                    [weakSelf nextMusicClick];
+                }
+                    
+                    break;
+                case 26:{
+                    
+                    if (playerManager.avPlayer.rate == 0) {
+                        
+                        [btn setBackgroundImage:KImageName(@"cm2_fm_btn_play_prs") forState:UIControlStateNormal];
+                        [weakSelf.bottomMenuView.iconImageView resumeRotating];
+                        [playerManager startPlay];
+                        
+                    } else {
+                        
+                        [btn setBackgroundImage:KImageName(@"cm2_fm_btn_pause_prs") forState:UIControlStateNormal];
+                        [weakSelf.bottomMenuView.iconImageView stopRotating];
+                        [playerManager stopPlay];
+                    }
+                }
+                    
+                    break;
+                case 27:{
+                    [weakSelf previousMusicClick];
+                }
+                    
+                    break;
+                    
+                default:
+                    break;
+            }
+            
+        };
     }
     return _bottomMenuView;
+}
+#pragma mark - removeObserver
+- (void)dealloc{
+    [self removeObserver];
+}
+
+- (void)removeObserver{
+    
+    [playerManager.avPlayer removeTimeObserver:_playerTimeObserver];
+    _playerTimeObserver = nil;
+    
+    [playerManager.avPlayer.currentItem cancelPendingSeeks];
+    [playerManager.avPlayer.currentItem.asset cancelLoading];
+    
+//    MPRemoteCommandCenter *commandCenter = [MPRemoteCommandCenter sharedCommandCenter];
+//    [commandCenter.likeCommand removeTarget:self];
+//    [commandCenter.dislikeCommand removeTarget:self];
+//    [commandCenter.bookmarkCommand removeTarget:self];
+//    [commandCenter.nextTrackCommand removeTarget:self];
+//    [commandCenter.skipForwardCommand removeTarget:self];
+//    [commandCenter.changePlaybackPositionCommand removeTarget:self];
 }
 
 

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "AppDelegate+JDLAppService.h"
 #import "JDLTabBarController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 @interface AppDelegate ()
 
 @end
@@ -26,6 +28,12 @@
     [self setNavBarAppearence];     //统一配置导航栏 状态栏
     [self adaptationNewIOS];        //适配iOS11以上版本
     [self configureBoardManager];   //键盘弹起收回统一处理
+    
+    // 后台播放音频设置,需要在Capabilities->Background Modes中勾选Audio,Airplay,and Picture in Picture
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];  
     
     NSString *cachePath = [[ZBCacheManager sharedInstance]ZBKitPath];
     NSLog(@"cachePath = %@",cachePath);

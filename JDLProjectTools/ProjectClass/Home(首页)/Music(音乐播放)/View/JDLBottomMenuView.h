@@ -13,8 +13,14 @@
 @interface JDLBottomMenuView : UIView
 
 @property (nonatomic,strong) JDLMusicRotationImageView *iconImageView;
-@property (nonatomic,strong) UILabel *progressLine;
-@property (nonatomic,strong) UILabel *musicName;
-@property (nonatomic,strong) UILabel *authorName;
+@property (nonatomic,strong) JDLCircleView *circleView;
+@property (nonatomic,strong) JDLRollLabel *musicName;
+@property (nonatomic,strong) JDLRollLabel *authorName;
 @property (nonatomic,strong) UIButton *startBtn;
+@property (nonatomic,strong) UIButton *forntBtn;
+@property (nonatomic,strong) UIButton *nextBtn;
+@property (nonatomic,strong) UILabel *timeLabel;
+
+@property (nonatomic,strong) void(^bottomButtonClickBlock)(NSInteger index,UIButton *btn);
+
 @end

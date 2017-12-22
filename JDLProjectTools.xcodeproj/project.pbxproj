@@ -72,6 +72,33 @@
 		826FAFE91FE93447009C275C /* JDLMusicRotationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFE81FE93447009C275C /* JDLMusicRotationImageView.m */; };
 		826FAFEC1FE93601009C275C /* JDLBottomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFEB1FE93601009C275C /* JDLBottomMenuView.m */; };
 		826FAFF01FE93C1B009C275C /* JDLMusicPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFEF1FE93C1B009C275C /* JDLMusicPlayerManager.m */; };
+		826FAFF41FEA4077009C275C /* JDLRollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFF31FEA4077009C275C /* JDLRollLabel.m */; };
+		826FAFF71FEA5854009C275C /* JDLRollTwoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFF61FEA5854009C275C /* JDLRollTwoLabel.m */; };
+		826FAFFA1FEB4C8D009C275C /* JDLScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFF91FEB4C8D009C275C /* JDLScrollLabel.m */; };
+		826FAFFE1FEB60B1009C275C /* JDLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FAFFD1FEB60B1009C275C /* JDLProgressView.m */; };
+		826FB0011FEB7115009C275C /* JDLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0001FEB7115009C275C /* JDLCircleView.m */; };
+		826FB0041FEB8EAE009C275C /* JDLMusicPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0031FEB8EAE009C275C /* JDLMusicPlayModel.m */; };
+		826FB0081FEB9CAC009C275C /* JDLAutherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0071FEB9CAC009C275C /* JDLAutherManager.m */; };
+		826FB00B1FEBC8FE009C275C /* JDLMusicLrcDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB00A1FEBC8FE009C275C /* JDLMusicLrcDetailViewController.m */; };
+		826FB0301FEBCD19009C275C /* UINavigationController+WXSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0261FEBCCF8009C275C /* UINavigationController+WXSTransition.m */; };
+		826FB0311FEBCD1C009C275C /* UIViewController+WXSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB02B1FEBCCF9009C275C /* UIViewController+WXSTransition.m */; };
+		826FB0321FEBCD1E009C275C /* UIViewController+WXSTransitionProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0151FEBCCF5009C275C /* UIViewController+WXSTransitionProperty.m */; };
+		826FB0331FEBCD20009C275C /* WXSPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB02C1FEBCCFA009C275C /* WXSPercentDrivenInteractiveTransition.m */; };
+		826FB0341FEBCD23009C275C /* WXSTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0191FEBCCF6009C275C /* WXSTransitionManager.m */; };
+		826FB0351FEBCD26009C275C /* WXSTransitionManager+BoomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB00F1FEBCCF5009C275C /* WXSTransitionManager+BoomAnimation.m */; };
+		826FB0361FEBCD28009C275C /* WXSTransitionManager+BrickAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0171FEBCCF6009C275C /* WXSTransitionManager+BrickAnimation.m */; };
+		826FB0371FEBCD2B009C275C /* WXSTransitionManager+CoverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB01D1FEBCCF6009C275C /* WXSTransitionManager+CoverAnimation.m */; };
+		826FB0381FEBCD31009C275C /* WXSTransitionManager+FlipAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB02E1FEBCCFB009C275C /* WXSTransitionManager+FlipAnimation.m */; };
+		826FB0391FEBCD34009C275C /* WXSTransitionManager+FragmentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0101FEBCCF5009C275C /* WXSTransitionManager+FragmentAnimation.m */; };
+		826FB03A1FEBCD37009C275C /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB02F1FEBCCFB009C275C /* WXSTransitionManager+InsideThenPushAnimation.m */; };
+		826FB03B1FEBCD39009C275C /* WXSTransitionManager+PageAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0221FEBCCF7009C275C /* WXSTransitionManager+PageAnimation.m */; };
+		826FB03C1FEBCD3B009C275C /* WXSTransitionManager+SpreadAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0241FEBCCF7009C275C /* WXSTransitionManager+SpreadAnimation.m */; };
+		826FB03D1FEBCD3E009C275C /* WXSTransitionManager+SystermAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB00E1FEBCCF5009C275C /* WXSTransitionManager+SystermAnimation.m */; };
+		826FB03E1FEBCD40009C275C /* WXSTransitionManager+TypeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB01B1FEBCCF6009C275C /* WXSTransitionManager+TypeTool.m */; };
+		826FB03F1FEBCD43009C275C /* WXSTransitionManager+ViewMoveAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0121FEBCCF5009C275C /* WXSTransitionManager+ViewMoveAnimation.m */; };
+		826FB0401FEBCD46009C275C /* WXSTransitionProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB02D1FEBCCFA009C275C /* WXSTransitionProperty.m */; };
+		826FB0461FEBD982009C275C /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0431FEBD97C009C275C /* UIViewController+XLBubbleTransition.m */; };
+		826FB0471FEBD984009C275C /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0451FEBD97C009C275C /* XLBubbleTransition.m */; };
 		82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */; };
 		82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */; };
 /* End PBXBuildFile section */
@@ -233,6 +260,61 @@
 		826FAFEB1FE93601009C275C /* JDLBottomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLBottomMenuView.m; sourceTree = "<group>"; };
 		826FAFEE1FE93C1B009C275C /* JDLMusicPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicPlayerManager.h; sourceTree = "<group>"; };
 		826FAFEF1FE93C1B009C275C /* JDLMusicPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicPlayerManager.m; sourceTree = "<group>"; };
+		826FAFF21FEA4077009C275C /* JDLRollLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLRollLabel.h; sourceTree = "<group>"; };
+		826FAFF31FEA4077009C275C /* JDLRollLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLRollLabel.m; sourceTree = "<group>"; };
+		826FAFF51FEA5854009C275C /* JDLRollTwoLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLRollTwoLabel.h; sourceTree = "<group>"; };
+		826FAFF61FEA5854009C275C /* JDLRollTwoLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLRollTwoLabel.m; sourceTree = "<group>"; };
+		826FAFF81FEB4C8D009C275C /* JDLScrollLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLScrollLabel.h; sourceTree = "<group>"; };
+		826FAFF91FEB4C8D009C275C /* JDLScrollLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLScrollLabel.m; sourceTree = "<group>"; };
+		826FAFFC1FEB60B1009C275C /* JDLProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLProgressView.h; sourceTree = "<group>"; };
+		826FAFFD1FEB60B1009C275C /* JDLProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLProgressView.m; sourceTree = "<group>"; };
+		826FAFFF1FEB7115009C275C /* JDLCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCircleView.h; sourceTree = "<group>"; };
+		826FB0001FEB7115009C275C /* JDLCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLCircleView.m; sourceTree = "<group>"; };
+		826FB0021FEB8EAE009C275C /* JDLMusicPlayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicPlayModel.h; sourceTree = "<group>"; };
+		826FB0031FEB8EAE009C275C /* JDLMusicPlayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicPlayModel.m; sourceTree = "<group>"; };
+		826FB0061FEB9CAC009C275C /* JDLAutherManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLAutherManager.h; sourceTree = "<group>"; };
+		826FB0071FEB9CAC009C275C /* JDLAutherManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLAutherManager.m; sourceTree = "<group>"; };
+		826FB0091FEBC8FE009C275C /* JDLMusicLrcDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLMusicLrcDetailViewController.h; sourceTree = "<group>"; };
+		826FB00A1FEBC8FE009C275C /* JDLMusicLrcDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLMusicLrcDetailViewController.m; sourceTree = "<group>"; };
+		826FB00D1FEBCCF5009C275C /* WXSTransitionManager+ViewMoveAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+ViewMoveAnimation.h"; sourceTree = "<group>"; };
+		826FB00E1FEBCCF5009C275C /* WXSTransitionManager+SystermAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+SystermAnimation.m"; sourceTree = "<group>"; };
+		826FB00F1FEBCCF5009C275C /* WXSTransitionManager+BoomAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+BoomAnimation.m"; sourceTree = "<group>"; };
+		826FB0101FEBCCF5009C275C /* WXSTransitionManager+FragmentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+FragmentAnimation.m"; sourceTree = "<group>"; };
+		826FB0111FEBCCF5009C275C /* WXSTransitionManager+SpreadAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+SpreadAnimation.h"; sourceTree = "<group>"; };
+		826FB0121FEBCCF5009C275C /* WXSTransitionManager+ViewMoveAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+ViewMoveAnimation.m"; sourceTree = "<group>"; };
+		826FB0131FEBCCF5009C275C /* WXSTransitionManager+FlipAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+FlipAnimation.h"; sourceTree = "<group>"; };
+		826FB0141FEBCCF5009C275C /* WXSPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		826FB0151FEBCCF5009C275C /* UIViewController+WXSTransitionProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WXSTransitionProperty.m"; sourceTree = "<group>"; };
+		826FB0161FEBCCF5009C275C /* UIViewController+WXSTransitionProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WXSTransitionProperty.h"; sourceTree = "<group>"; };
+		826FB0171FEBCCF6009C275C /* WXSTransitionManager+BrickAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+BrickAnimation.m"; sourceTree = "<group>"; };
+		826FB0181FEBCCF6009C275C /* WXSTransitionManager+CoverAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+CoverAnimation.h"; sourceTree = "<group>"; };
+		826FB0191FEBCCF6009C275C /* WXSTransitionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXSTransitionManager.m; sourceTree = "<group>"; };
+		826FB01A1FEBCCF6009C275C /* WXSTransitionManager+SystermAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+SystermAnimation.h"; sourceTree = "<group>"; };
+		826FB01B1FEBCCF6009C275C /* WXSTransitionManager+TypeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+TypeTool.m"; sourceTree = "<group>"; };
+		826FB01C1FEBCCF6009C275C /* UIViewController+WXSTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WXSTransition.h"; sourceTree = "<group>"; };
+		826FB01D1FEBCCF6009C275C /* WXSTransitionManager+CoverAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+CoverAnimation.m"; sourceTree = "<group>"; };
+		826FB01E1FEBCCF7009C275C /* UINavigationController+WXSTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WXSTransition.h"; sourceTree = "<group>"; };
+		826FB01F1FEBCCF7009C275C /* WXSTransitionManager+TypeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+TypeTool.h"; sourceTree = "<group>"; };
+		826FB0201FEBCCF7009C275C /* WXSTransitionProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSTransitionProperty.h; sourceTree = "<group>"; };
+		826FB0211FEBCCF7009C275C /* WXSTransitionManager+FragmentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+FragmentAnimation.h"; sourceTree = "<group>"; };
+		826FB0221FEBCCF7009C275C /* WXSTransitionManager+PageAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+PageAnimation.m"; sourceTree = "<group>"; };
+		826FB0231FEBCCF7009C275C /* WXSTransitionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSTransitionManager.h; sourceTree = "<group>"; };
+		826FB0241FEBCCF7009C275C /* WXSTransitionManager+SpreadAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+SpreadAnimation.m"; sourceTree = "<group>"; };
+		826FB0251FEBCCF8009C275C /* WXSTransitionManager+BrickAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+BrickAnimation.h"; sourceTree = "<group>"; };
+		826FB0261FEBCCF8009C275C /* UINavigationController+WXSTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WXSTransition.m"; sourceTree = "<group>"; };
+		826FB0271FEBCCF8009C275C /* WXSTransitionManager+BoomAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+BoomAnimation.h"; sourceTree = "<group>"; };
+		826FB0281FEBCCF8009C275C /* WXSTransitionManager+PageAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+PageAnimation.h"; sourceTree = "<group>"; };
+		826FB0291FEBCCF9009C275C /* WXSTypedefConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSTypedefConfig.h; sourceTree = "<group>"; };
+		826FB02A1FEBCCF9009C275C /* WXSTransitionManager+InsideThenPushAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSTransitionManager+InsideThenPushAnimation.h"; sourceTree = "<group>"; };
+		826FB02B1FEBCCF9009C275C /* UIViewController+WXSTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WXSTransition.m"; sourceTree = "<group>"; };
+		826FB02C1FEBCCFA009C275C /* WXSPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXSPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
+		826FB02D1FEBCCFA009C275C /* WXSTransitionProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXSTransitionProperty.m; sourceTree = "<group>"; };
+		826FB02E1FEBCCFB009C275C /* WXSTransitionManager+FlipAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+FlipAnimation.m"; sourceTree = "<group>"; };
+		826FB02F1FEBCCFB009C275C /* WXSTransitionManager+InsideThenPushAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WXSTransitionManager+InsideThenPushAnimation.m"; sourceTree = "<group>"; };
+		826FB0421FEBD97C009C275C /* UIViewController+XLBubbleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XLBubbleTransition.h"; sourceTree = "<group>"; };
+		826FB0431FEBD97C009C275C /* UIViewController+XLBubbleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XLBubbleTransition.m"; sourceTree = "<group>"; };
+		826FB0441FEBD97C009C275C /* XLBubbleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
+		826FB0451FEBD97C009C275C /* XLBubbleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
 		82FF319A1FE26E8B00E67B18 /* JDLQQAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQAppViewController.h; sourceTree = "<group>"; };
 		82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLQQAppViewController.m; sourceTree = "<group>"; };
 		82FF319D1FE277DB00E67B18 /* JDLQQMyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQMyMessageViewController.h; sourceTree = "<group>"; };
@@ -366,12 +448,16 @@
 		8212B4AB1FDD0EA200DBCBCF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				826FB00C1FEBCCC3009C275C /* JDLTransition(转场动画) */,
+				826FB0051FEB9C5C009C275C /* JDLCommonTools */,
+				826FAFFB1FEB608C009C275C /* JDLProgressView(进度条) */,
+				826FAFF11FEA403C009C275C /* JDLRollLabel(滚动文字) */,
 				826FAFDD1FE8D690009C275C /* JDLRefreshEmptyData(下拉上拉空数据展示) */,
 				826FAFD01FE7B8EE009C275C /* JDLLogText(转码输出中文) */,
 				826FAFBA1FE7A835009C275C /* JDLRequest(网络请求+缓存) */,
 				826FAFA31FE78FE0009C275C /* JDLCustomSegment(滑动选项卡) */,
-				824960D61FE1026F004DF289 /* TableviewCellAnimation(cell动画) */,
-				824960CC1FE0D871004DF289 /* Navigation(自定义多样化导航栏) */,
+				824960D61FE1026F004DF289 /* JDLTableviewCellAnimation(cell动画) */,
+				824960CC1FE0D871004DF289 /* JDLNavigation(自定义多样化导航栏) */,
 				8212B4E41FDE4FCF00DBCBCF /* block&delagate(例子) */,
 				8212B4DD1FDE3A1200DBCBCF /* JDLCategoryInherit(系统控件类别继承) */,
 				8212B4AC1FDD0EB300DBCBCF /* JDLToolsPrefixHeader.pch */,
@@ -530,7 +616,7 @@
 			path = "ButtonInherit(继承)";
 			sourceTree = "<group>";
 		};
-		824960CC1FE0D871004DF289 /* Navigation(自定义多样化导航栏) */ = {
+		824960CC1FE0D871004DF289 /* JDLNavigation(自定义多样化导航栏) */ = {
 			isa = PBXGroup;
 			children = (
 				824960CD1FE0D8AA004DF289 /* JDLNavigationBar.h */,
@@ -538,10 +624,10 @@
 				824960D01FE0D8BD004DF289 /* JDLCustomNavigationBar.h */,
 				824960D11FE0D8BD004DF289 /* JDLCustomNavigationBar.m */,
 			);
-			path = "Navigation(自定义多样化导航栏)";
+			path = "JDLNavigation(自定义多样化导航栏)";
 			sourceTree = "<group>";
 		};
-		824960D61FE1026F004DF289 /* TableviewCellAnimation(cell动画) */ = {
+		824960D61FE1026F004DF289 /* JDLTableviewCellAnimation(cell动画) */ = {
 			isa = PBXGroup;
 			children = (
 				824960D71FE102D6004DF289 /* JDLTableViewAnimationKit.h */,
@@ -551,7 +637,7 @@
 				824960DC1FE10389004DF289 /* UITableView+JDLAnimationKit.h */,
 				824960DD1FE10389004DF289 /* UITableView+JDLAnimationKit.m */,
 			);
-			path = "TableviewCellAnimation(cell动画)";
+			path = "JDLTableviewCellAnimation(cell动画)";
 			sourceTree = "<group>";
 		};
 		824960DF1FE110C3004DF289 /* NavigaitonBar(导航栏多样化) */ = {
@@ -727,6 +813,8 @@
 			children = (
 				826FAFD71FE8D47A009C275C /* JDLMusicListModel.h */,
 				826FAFD81FE8D47A009C275C /* JDLMusicListModel.m */,
+				826FB0021FEB8EAE009C275C /* JDLMusicPlayModel.h */,
+				826FB0031FEB8EAE009C275C /* JDLMusicPlayModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -749,6 +837,8 @@
 			children = (
 				826FAFB71FE79A0B009C275C /* JDLDetailMusicViewController.h */,
 				826FAFB81FE79A0B009C275C /* JDLDetailMusicViewController.m */,
+				826FB0091FEBC8FE009C275C /* JDLMusicLrcDetailViewController.h */,
+				826FB00A1FEBC8FE009C275C /* JDLMusicLrcDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -780,6 +870,93 @@
 				826FAFEF1FE93C1B009C275C /* JDLMusicPlayerManager.m */,
 			);
 			path = MusicManager;
+			sourceTree = "<group>";
+		};
+		826FAFF11FEA403C009C275C /* JDLRollLabel(滚动文字) */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFF21FEA4077009C275C /* JDLRollLabel.h */,
+				826FAFF31FEA4077009C275C /* JDLRollLabel.m */,
+				826FAFF51FEA5854009C275C /* JDLRollTwoLabel.h */,
+				826FAFF61FEA5854009C275C /* JDLRollTwoLabel.m */,
+				826FAFF81FEB4C8D009C275C /* JDLScrollLabel.h */,
+				826FAFF91FEB4C8D009C275C /* JDLScrollLabel.m */,
+			);
+			path = "JDLRollLabel(滚动文字)";
+			sourceTree = "<group>";
+		};
+		826FAFFB1FEB608C009C275C /* JDLProgressView(进度条) */ = {
+			isa = PBXGroup;
+			children = (
+				826FAFFC1FEB60B1009C275C /* JDLProgressView.h */,
+				826FAFFD1FEB60B1009C275C /* JDLProgressView.m */,
+				826FAFFF1FEB7115009C275C /* JDLCircleView.h */,
+				826FB0001FEB7115009C275C /* JDLCircleView.m */,
+			);
+			path = "JDLProgressView(进度条)";
+			sourceTree = "<group>";
+		};
+		826FB0051FEB9C5C009C275C /* JDLCommonTools */ = {
+			isa = PBXGroup;
+			children = (
+				826FB0061FEB9CAC009C275C /* JDLAutherManager.h */,
+				826FB0071FEB9CAC009C275C /* JDLAutherManager.m */,
+			);
+			path = JDLCommonTools;
+			sourceTree = "<group>";
+		};
+		826FB00C1FEBCCC3009C275C /* JDLTransition(转场动画) */ = {
+			isa = PBXGroup;
+			children = (
+				826FB0411FEBD97C009C275C /* XLBubbleTransition */,
+				826FB01E1FEBCCF7009C275C /* UINavigationController+WXSTransition.h */,
+				826FB0261FEBCCF8009C275C /* UINavigationController+WXSTransition.m */,
+				826FB01C1FEBCCF6009C275C /* UIViewController+WXSTransition.h */,
+				826FB02B1FEBCCF9009C275C /* UIViewController+WXSTransition.m */,
+				826FB0161FEBCCF5009C275C /* UIViewController+WXSTransitionProperty.h */,
+				826FB0151FEBCCF5009C275C /* UIViewController+WXSTransitionProperty.m */,
+				826FB0141FEBCCF5009C275C /* WXSPercentDrivenInteractiveTransition.h */,
+				826FB02C1FEBCCFA009C275C /* WXSPercentDrivenInteractiveTransition.m */,
+				826FB0231FEBCCF7009C275C /* WXSTransitionManager.h */,
+				826FB0191FEBCCF6009C275C /* WXSTransitionManager.m */,
+				826FB0271FEBCCF8009C275C /* WXSTransitionManager+BoomAnimation.h */,
+				826FB00F1FEBCCF5009C275C /* WXSTransitionManager+BoomAnimation.m */,
+				826FB0251FEBCCF8009C275C /* WXSTransitionManager+BrickAnimation.h */,
+				826FB0171FEBCCF6009C275C /* WXSTransitionManager+BrickAnimation.m */,
+				826FB0181FEBCCF6009C275C /* WXSTransitionManager+CoverAnimation.h */,
+				826FB01D1FEBCCF6009C275C /* WXSTransitionManager+CoverAnimation.m */,
+				826FB0131FEBCCF5009C275C /* WXSTransitionManager+FlipAnimation.h */,
+				826FB02E1FEBCCFB009C275C /* WXSTransitionManager+FlipAnimation.m */,
+				826FB0211FEBCCF7009C275C /* WXSTransitionManager+FragmentAnimation.h */,
+				826FB0101FEBCCF5009C275C /* WXSTransitionManager+FragmentAnimation.m */,
+				826FB02A1FEBCCF9009C275C /* WXSTransitionManager+InsideThenPushAnimation.h */,
+				826FB02F1FEBCCFB009C275C /* WXSTransitionManager+InsideThenPushAnimation.m */,
+				826FB0281FEBCCF8009C275C /* WXSTransitionManager+PageAnimation.h */,
+				826FB0221FEBCCF7009C275C /* WXSTransitionManager+PageAnimation.m */,
+				826FB0111FEBCCF5009C275C /* WXSTransitionManager+SpreadAnimation.h */,
+				826FB0241FEBCCF7009C275C /* WXSTransitionManager+SpreadAnimation.m */,
+				826FB01A1FEBCCF6009C275C /* WXSTransitionManager+SystermAnimation.h */,
+				826FB00E1FEBCCF5009C275C /* WXSTransitionManager+SystermAnimation.m */,
+				826FB01F1FEBCCF7009C275C /* WXSTransitionManager+TypeTool.h */,
+				826FB01B1FEBCCF6009C275C /* WXSTransitionManager+TypeTool.m */,
+				826FB00D1FEBCCF5009C275C /* WXSTransitionManager+ViewMoveAnimation.h */,
+				826FB0121FEBCCF5009C275C /* WXSTransitionManager+ViewMoveAnimation.m */,
+				826FB0201FEBCCF7009C275C /* WXSTransitionProperty.h */,
+				826FB02D1FEBCCFA009C275C /* WXSTransitionProperty.m */,
+				826FB0291FEBCCF9009C275C /* WXSTypedefConfig.h */,
+			);
+			path = "JDLTransition(转场动画)";
+			sourceTree = "<group>";
+		};
+		826FB0411FEBD97C009C275C /* XLBubbleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				826FB0421FEBD97C009C275C /* UIViewController+XLBubbleTransition.h */,
+				826FB0431FEBD97C009C275C /* UIViewController+XLBubbleTransition.m */,
+				826FB0441FEBD97C009C275C /* XLBubbleTransition.h */,
+				826FB0451FEBD97C009C275C /* XLBubbleTransition.m */,
+			);
+			path = XLBubbleTransition;
 			sourceTree = "<group>";
 		};
 		88BB3892BD6F1DA5B50E8C0D /* Frameworks */ = {
@@ -862,6 +1039,11 @@
 					8212B4751FDAD9CE00DBCBCF = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					8212B48D1FDAD9CE00DBCBCF = {
 						CreatedOnToolsVersion = 9.0;
@@ -975,14 +1157,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826FB0311FEBCD1C009C275C /* UIViewController+WXSTransition.m in Sources */,
 				824960CF1FE0D8AA004DF289 /* JDLNavigationBar.m in Sources */,
+				826FB0471FEBD984009C275C /* XLBubbleTransition.m in Sources */,
 				8212B4D11FDE26A400DBCBCF /* JDLHomeViewController.m in Sources */,
+				826FAFF41FEA4077009C275C /* JDLRollLabel.m in Sources */,
+				826FB0011FEB7115009C275C /* JDLCircleView.m in Sources */,
+				826FB0351FEBCD26009C275C /* WXSTransitionManager+BoomAnimation.m in Sources */,
+				826FB0361FEBCD28009C275C /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				8212B4CE1FDE269A00DBCBCF /* JDLFoundViewController.m in Sources */,
 				824960D91FE102D6004DF289 /* JDLTableViewAnimationKit.m in Sources */,
 				824960F61FE11EA0004DF289 /* JDLMoveNavViewController.m in Sources */,
 				8212B4E71FDE517700DBCBCF /* UIButton+JDLCountDown.m in Sources */,
+				826FB0381FEBCD31009C275C /* WXSTransitionManager+FlipAnimation.m in Sources */,
+				826FB0341FEBCD23009C275C /* WXSTransitionManager.m in Sources */,
 				8212B4B11FDD109D00DBCBCF /* JDLPopContentManager.m in Sources */,
 				824960DE1FE10389004DF289 /* UITableView+JDLAnimationKit.m in Sources */,
+				826FB0041FEB8EAE009C275C /* JDLMusicPlayModel.m in Sources */,
 				820DA5F41FE3C4DD00F9C55B /* JDLBaseViewController.m in Sources */,
 				8212B4C51FDE1F9100DBCBCF /* JDLTabBarController.m in Sources */,
 				8212B4CB1FDE269000DBCBCF /* JDLMessageViewController.m in Sources */,
@@ -994,6 +1185,7 @@
 				826FAFE31FE8D7C6009C275C /* UIScrollView+JDLRefresh.m in Sources */,
 				826FAFB51FE791EF009C275C /* UIView+JDLFrame.m in Sources */,
 				8212B4BA1FDD3DA800DBCBCF /* JDLToolsManager.m in Sources */,
+				826FAFFA1FEB4C8D009C275C /* JDLScrollLabel.m in Sources */,
 				824960D51FE0F039004DF289 /* AppDelegate+JDLAppService.m in Sources */,
 				826FAFA91FE790BB009C275C /* JDLPageTitleView.m in Sources */,
 				824960FE1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m in Sources */,
@@ -1001,41 +1193,58 @@
 				826FAFC81FE7A87A009C275C /* ZBCacheManager.m in Sources */,
 				820DA6081FE75DB400F9C55B /* JDLCustomBgImageViewController.m in Sources */,
 				826FAFA21FE78735009C275C /* JDLMusicViewController.m in Sources */,
+				826FAFFE1FEB60B1009C275C /* JDLProgressView.m in Sources */,
 				82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */,
+				826FB0461FEBD982009C275C /* UIViewController+XLBubbleTransition.m in Sources */,
 				826FAFC71FE7A877009C275C /* NSFileManager+ZBPathMethod.m in Sources */,
 				8212B47E1FDAD9CE00DBCBCF /* ViewController.m in Sources */,
 				826FAFEC1FE93601009C275C /* JDLBottomMenuView.m in Sources */,
+				826FB0081FEB9CAC009C275C /* JDLAutherManager.m in Sources */,
 				820DA5FB1FE7556000F9C55B /* JDLMoveNavToStautarViewController.m in Sources */,
 				8212B4C81FDE267F00DBCBCF /* JDLMineViewController.m in Sources */,
+				826FB03B1FEBCD39009C275C /* WXSTransitionManager+PageAnimation.m in Sources */,
 				826FAFCF1FE7B5E8009C275C /* JDLMusicApi.m in Sources */,
 				826FAFC91FE7A880009C275C /* ZBRequestEngine.m in Sources */,
 				824960E61FE11227004DF289 /* JDLButtonViewController.m in Sources */,
 				824960F31FE11E95004DF289 /* JDLCustomNavViewController.m in Sources */,
 				824960D21FE0D8BD004DF289 /* JDLCustomNavigationBar.m in Sources */,
+				826FB0371FEBCD2B009C275C /* WXSTransitionManager+CoverAnimation.m in Sources */,
+				826FB03F1FEBCD43009C275C /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				8212B4F31FDF833200DBCBCF /* UIButton+JDLLayout.m in Sources */,
 				826FAFD91FE8D47A009C275C /* JDLMusicListModel.m in Sources */,
 				824960F01FE11E87004DF289 /* JDLCommonNavViewController.m in Sources */,
 				8212B4D51FDE2DA200DBCBCF /* JDLCenterViewController.m in Sources */,
 				826FAFA61FE79012009C275C /* JDLPageTitleViewConfigure.m in Sources */,
+				826FAFF71FEA5854009C275C /* JDLRollTwoLabel.m in Sources */,
 				8212B4891FDAD9CE00DBCBCF /* main.m in Sources */,
+				826FB0401FEBCD46009C275C /* WXSTransitionProperty.m in Sources */,
 				82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */,
 				8212B47B1FDAD9CE00DBCBCF /* AppDelegate.m in Sources */,
 				826FAFD21FE7B922009C275C /* Foundation+Log.m in Sources */,
 				826FAFB91FE79A0B009C275C /* JDLDetailMusicViewController.m in Sources */,
 				826FAFF01FE93C1B009C275C /* JDLMusicPlayerManager.m in Sources */,
 				826FAFCB1FE7A886009C275C /* ZBURLRequest.m in Sources */,
+				826FB03C1FEBCD3B009C275C /* WXSTransitionManager+SpreadAnimation.m in Sources */,
+				826FB0391FEBCD34009C275C /* WXSTransitionManager+FragmentAnimation.m in Sources */,
 				8212B4E01FDE3A5100DBCBCF /* UIButton+JDLImagePosition.m in Sources */,
+				826FB00B1FEBC8FE009C275C /* JDLMusicLrcDetailViewController.m in Sources */,
 				8212B4E31FDE4B1B00DBCBCF /* JDLAnimationButton.m in Sources */,
 				824960EA1FE11387004DF289 /* JDLPopupViewViewController.m in Sources */,
 				820DA5FE1FE755D600F9C55B /* JDLMoveFromYViewController.m in Sources */,
 				826FAFCA1FE7A883009C275C /* ZBRequestManager.m in Sources */,
 				820DA60B1FE7634C00F9C55B /* JDLCustomNavColorChangeViewController.m in Sources */,
 				826FAFAE1FE7913D009C275C /* JDLPageContentView.m in Sources */,
+				826FB03A1FEBCD37009C275C /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
 				8212B4DC1FDE38F600DBCBCF /* JDLHeadView.m in Sources */,
 				826FAFE21FE8D7C3009C275C /* UIScrollView+JDLEmptyData.m in Sources */,
+				826FB0331FEBCD20009C275C /* WXSPercentDrivenInteractiveTransition.m in Sources */,
 				8212B4EA1FDE5C6500DBCBCF /* UIButton+JDLTouch.m in Sources */,
 				824960CB1FE0CFD3004DF289 /* JDLNavigationController.m in Sources */,
+				826FB0321FEBCD1E009C275C /* UIViewController+WXSTransitionProperty.m in Sources */,
 				826FAFE91FE93447009C275C /* JDLMusicRotationImageView.m in Sources */,
+				826FB03E1FEBCD40009C275C /* WXSTransitionManager+TypeTool.m in Sources */,
+				826FB0301FEBCD19009C275C /* UINavigationController+WXSTransition.m in Sources */,
+				826FB03D1FEBCD3E009C275C /* WXSTransitionManager+SystermAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

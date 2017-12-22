@@ -13,10 +13,17 @@
 #import "JDLMusicCell.h"
 
 #import "JDLMusicListModel.h"
+#import "JDLMusicPlayModel.h"
+
+#define TITLES @[@"修改", @"删除", @"扫一扫",@"付款"]
+#define ICONS  @[@"motify",@"delete",@"saoyisao",@"pay"]
 
 static NSString *CellId = @"Cell";
 @interface JDLDetailMusicViewController ()<UITableViewDelegate,UITableViewDataSource>
-
+{
+    JDLMusicPlayModel *playMusicManager;
+    NSInteger selectIndex;
+}
 @property (nonatomic,strong) UITableView        *tableView;
 @property (nonatomic,strong) NSMutableArray     *musicListArray;
 
@@ -28,6 +35,8 @@ static NSString *CellId = @"Cell";
     [super viewDidLoad];
 
     [self createView];          //创建视图
+    
+    playMusicManager =[JDLMusicPlayModel shareManager];
     
     [self requestData];         //请求数据
 }
@@ -83,50 +92,34 @@ static NSString *CellId = @"Cell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     JDLMusicListModel *model =self.musicListArray[indexPath.row];
+  
+    [playMusicManager loadMusicWith:model index:indexPath.row];
     
-    KPostNotification(KPlayMusicNofication, nil, @{@"model":model});
 
-
+//    CGRect rectInTableView = [tableView rectForRowAtIndexPath:indexPath];
+//    CGRect rectInSuperview = [tableView convertRect:rectInTableView toView:[tableView superview]];
+//    CGPoint point =CGPointMake(rectInSuperview.origin.x, rectInSuperview.origin.y);
+//    //推荐用这种写法
+//    [YBPopupMenu showAtPoint:point titles:TITLES icons:nil menuWidth:110 otherSettings:^(YBPopupMenu *popupMenu) {
+//        popupMenu.dismissOnSelected = NO;
+//        popupMenu.isShowShadow = YES;
+//        popupMenu.delegate = self;
+//        popupMenu.offset = 10;
+//        popupMenu.type = YBPopupMenuTypeDark;
+//        popupMenu.rectCorner = UIRectCornerBottomLeft | UIRectCornerBottomRight;
+//    }];
+   
     JDLLog(@"你选择了《%@》这首歌==%@",model.title,model.lrclink);
-    
 }
 
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-//{
-//    CGFloat offsetY = scrollView.contentOffset.y;
-//
-//    // 向上滑动的距离
-//    CGFloat scrollUpHeight = offsetY;
-//    // 除数表示 -> 导航栏从完全不透明到完全透明的过渡距离
-//    CGFloat progress =scrollUpHeight / KNavbarHeight;
-//    if (offsetY > 0)
-//    {
-//        if (scrollUpHeight > 64)
-//        {
-//            [self setNavigationBarTransformProgress:1];
-//        }
-//        else
-//        {
-//            [self setNavigationBarTransformProgress: progress];
-//        }
-//    }
-//    else
-//    {
-//        [self setNavigationBarTransformProgress:0];
-//
-//        scrollView.contentOffset =CGPointMake(0, 0);
-//    }
-//}
-//
-//- (void)setNavigationBarTransformProgress:(CGFloat)progress
-//{
-//    // -44代表 停留的位置
-//
-//    [self.navigationController.navigationBar JDL_setTranslationY:(-44 * progress)];
-//    // 没有系统返回按钮，所以 hasSystemBackIndicator = NO
-//    // 如果这里不设置为NO，你会发现，导航栏无缘无故多出来一个返回按钮
-//    [self.navigationController.navigationBar JDL_setBarButtonItemsAlpha:(1 - progress) hasSystemBackIndicator:NO];
-//}
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    self.scrollviewMoveStr =KNSStringFormat(@"%f",scrollView.contentOffset.y);
+    KPostNotification(KScrollViewMoveNofication, nil, nil);
+}
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    self.scrollviewEndStr =KNSStringFormat(@"%f",scrollView.contentOffset.y);
+    KPostNotification(KScrollViewMoveEndNofication, nil, nil);
+}
 
 
 #pragma mark - AFNetworking
@@ -158,15 +151,9 @@ static NSString *CellId = @"Cell";
         }else{
             [self.musicListArray addObjectsFromArray:loadSongArray];
         }
-//        //下拉刷新数据
-//        if (type==ZBRequestTypeRefresh) {
-//            [self.musicListArray removeAllObjects];
-//            self.musicListArray =loadSongArray;
-//        }
-//        //上拉加载数据
-//        if (type==ZBRequestTypeRefreshMore) {
-//            [self.musicListArray addObjectsFromArray:loadSongArray];
-//        }
+
+        playMusicManager.allMusicArray =self.musicListArray;
+        
         [self.tableView headerEndRefreshing];    //结束刷新
         [self.tableView footerEndRefreshing];    //结束刷新
         [self.tableView reloadData];

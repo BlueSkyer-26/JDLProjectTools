@@ -9,12 +9,6 @@
 #import "JDLMusicCell.h"
 @interface JDLMusicCell ()
 
-@property (nonatomic,strong) UIImageView    *headImageView;
-@property (nonatomic,strong) UILabel        *musicName;
-@property (nonatomic,strong) UILabel        *authorName;
-@property (nonatomic,strong) UILabel        *language;
-@property (nonatomic,strong) UILabel        *country;
-@property (nonatomic,strong) UIButton       *button;
 @end
 
 @implementation JDLMusicCell
@@ -35,6 +29,14 @@
             make.centerY.equalTo(self.contentView);
             make.width.height.offset(KAdaptY(40));
         }];
+        
+        _jumpView =[[UIView alloc] init];
+        [self.contentView addSubview:_jumpView];
+        [_jumpView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(_headImageView.mas_top).offset(KAdaptY(20));
+            make.left.bottom.right.equalTo(_headImageView);
+        }];
+        
         _musicName = [[UILabel alloc]init];
         _musicName.font =KSYSTEMFONT(16);
         _musicName.textColor =KTextColor;
@@ -42,8 +44,7 @@
         [_musicName mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_headImageView);
             make.left.equalTo(_headImageView.mas_right).offset(10);
-//            make.right.equalTo(self.contentView).offset(-60);
-//            make.width.offset(200);
+            make.width.mas_lessThanOrEqualTo(KScreenWidth *0.5);
             make.height.equalTo(_headImageView.mas_height).multipliedBy(1/2.0f);
         }];
         
@@ -96,6 +97,15 @@
             make.centerY.equalTo(self.contentView);
             make.width.height.mas_equalTo(30);
         }];
+        
+        _jumpNameView =[[UIView alloc] init];
+        [self.contentView addSubview:_jumpNameView];
+        [_jumpNameView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(_authorName);
+            make.right.equalTo(_button.mas_left).offset(-6);
+            make.height.offset(KAdaptY(16));
+            make.width.offset(KAdaptY(20));
+        }];
     }
     return self;
 }
@@ -110,6 +120,8 @@
     NSString *languageStr =KStrValid(model.language) ?KNSStringFormat(@" %@ ",model.language):@"";
     _language.text =languageStr;
     _country.text =KNSStringFormat(@" %@ ",model.country);
+    
+//    [JDLAutherManager popJumpAnimationView:_jumpNameView];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

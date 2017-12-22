@@ -12,4 +12,7 @@
 
 @property (nonatomic, copy) NSString *channelTitle;
 
+@property (nonatomic,assign) NSString *scrollviewMoveStr;
+@property (nonatomic,assign) NSString *scrollviewEndStr;
+
 @end

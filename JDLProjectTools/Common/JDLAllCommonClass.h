@@ -43,8 +43,9 @@
 #import "JDLProjectConfiguration.h"
 
 #pragma mark ------ Manager -------
-//#import "ZBNetworking.h"                        //带有缓存功能的网络请求
+//#import "ZBNetworking.h"                      //带有缓存功能的网络请求
 #import "JDLPopContentManager.h"                //弹出视图管理类
+#import "JDLAutherManager.h"                    //转换工具
 
 #pragma mark ------ Category -------
 #import "UIButton+JDLTouch.h"                   //防止button重复点击
@@ -54,12 +55,22 @@
 #import "UIScrollView+JDLRefresh.h"             //下拉刷新  上拉加载
 #import "UIScrollView+JDLEmptyData.h"           //无数据显示
 
+#import "UINavigationController+WXSTransition.h"//转场动画
+
+#import "UIViewController+XLBubbleTransition.h"
+#import "XLBubbleTransition.h"
+
 #pragma mark ------ Custom -------
 #import "JDLPageView.h"                         //滑动选项卡
 #import "JDLHeadView.h"
+#import "JDLRollLabel.h"                        //滚动label
+#import "JDLRollTwoLabel.h"                     //滚动label
+#import "JDLScrollLabel.h"                      //滚动label
+#import "JDLProgressView.h"                     //进度条
+#import "JDLCircleView.h"                       //圆形进度条
 #import "JDLAnimationButton.h"                  //带有动画button
 #import "JDLNavigationBar.h"                    //导航渐变 颜色 状态栏
-#import "JDLCustomNavigationBar.h"
+#import "JDLCustomNavigationBar.h"              //自定义导航渐变 颜色 状态栏
 #import "JDLTableViewAnimationKitHeaders.h"     //tableview  展示cell动画
 
 #pragma mark ------ Third -------

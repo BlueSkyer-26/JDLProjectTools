@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface JDLMusicListModel : NSObject
+
 @property (nonatomic,strong) NSString *author;
 @property (nonatomic,strong) NSString *country;
 @property (nonatomic,strong) NSString *lrclink;
@@ -17,4 +18,5 @@
 @property (nonatomic,strong) NSString *song_id;
 @property (nonatomic,strong) NSString *language;
 @property (nonatomic,strong) NSString *file_duration;
+
 @end

@@ -9,8 +9,10 @@
 #ifndef JDLProject_Configuration_h
 #define JDLProject_Configuration_h
 
+//通知
 #define KPlayMusicNofication @"KPlayMusicNofication"
-
+#define KScrollViewMoveNofication @"KScrollViewMoveNofication"
+#define KScrollViewMoveEndNofication @"KScrollViewMoveEndNofication"
 
 #pragma mark ------ 屏幕 -------
 #define KScreenWidth   [[UIScreen mainScreen] bounds].size.width
