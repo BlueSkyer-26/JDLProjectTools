@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '080474535953D0E1517E6200754E1EF3'
+               BlueprintIdentifier = 'A3C022DB4837268F9691E3D466C974F4'
                BlueprintName = 'YBPopupMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libYBPopupMenu.a'>

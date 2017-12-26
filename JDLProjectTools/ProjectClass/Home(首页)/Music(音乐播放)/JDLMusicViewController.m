@@ -110,6 +110,8 @@ JDLMusicPlayerManager *playerManager;
         _bottomMenuView.circleView.progress = currentTime/totalTime;
         _bottomMenuView.timeLabel.text =KNSStringFormat(@"%@/%@",[JDLAutherManager secondsToString:currentTime],[JDLAutherManager secondsToString:totalTime]);
         
+//        [JDLAutherManager popJumpAnimationView:_bottomMenuView.timeLabel];
+        
     }];
 }
 

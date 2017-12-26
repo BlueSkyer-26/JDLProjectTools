@@ -99,6 +99,19 @@
 		826FB0401FEBCD46009C275C /* WXSTransitionProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB02D1FEBCCFA009C275C /* WXSTransitionProperty.m */; };
 		826FB0461FEBD982009C275C /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0431FEBD97C009C275C /* UIViewController+XLBubbleTransition.m */; };
 		826FB0471FEBD984009C275C /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 826FB0451FEBD97C009C275C /* XLBubbleTransition.m */; };
+		826FB0681FF239EB009C275C /* ClasiftyGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0501FF239CA009C275C /* ClasiftyGoods.plist */; };
+		826FB0691FF239EF009C275C /* ClassiftyGoods01.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0511FF239CA009C275C /* ClassiftyGoods01.plist */; };
+		826FB06A1FF239F1009C275C /* ClassiftyGoods02.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0521FF239CA009C275C /* ClassiftyGoods02.plist */; };
+		826FB06B1FF239F3009C275C /* ClassiftyGoods03.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0531FF239CA009C275C /* ClassiftyGoods03.plist */; };
+		826FB06C1FF239F6009C275C /* ClassifyTitles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0541FF239CA009C275C /* ClassifyTitles.plist */; };
+		826FB06D1FF239F8009C275C /* DetailRecommend.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0551FF239CA009C275C /* DetailRecommend.plist */; };
+		826FB06E1FF239FA009C275C /* FiltrateItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0561FF239CA009C275C /* FiltrateItem.plist */; };
+		826FB06F1FF239FC009C275C /* FootprintGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0571FF239CA009C275C /* FootprintGoods.plist */; };
+		826FB0701FF239FD009C275C /* shareTerrace.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0581FF239CA009C275C /* shareTerrace.plist */; };
+		826FB0711FF23A00009C275C /* ShopItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0591FF239CA009C275C /* ShopItem.plist */; };
+		826FB0721FF23A05009C275C /* CountDownShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0621FF239CA009C275C /* CountDownShop.plist */; };
+		826FB0731FF23A08009C275C /* GoodsGrid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0631FF239CA009C275C /* GoodsGrid.plist */; };
+		826FB0741FF23A0A009C275C /* HomeHighGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0641FF239CA009C275C /* HomeHighGoods.plist */; };
 		82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */; };
 		82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */; };
 /* End PBXBuildFile section */
@@ -315,6 +328,29 @@
 		826FB0431FEBD97C009C275C /* UIViewController+XLBubbleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XLBubbleTransition.m"; sourceTree = "<group>"; };
 		826FB0441FEBD97C009C275C /* XLBubbleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
 		826FB0451FEBD97C009C275C /* XLBubbleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
+		826FB04C1FF23960009C275C /* JDLStoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLStoreDataManager.h; sourceTree = "<group>"; };
+		826FB04E1FF239C9009C275C /* RecommendShop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RecommendShop.plist; sourceTree = "<group>"; };
+		826FB0501FF239CA009C275C /* ClasiftyGoods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ClasiftyGoods.plist; sourceTree = "<group>"; };
+		826FB0511FF239CA009C275C /* ClassiftyGoods01.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ClassiftyGoods01.plist; sourceTree = "<group>"; };
+		826FB0521FF239CA009C275C /* ClassiftyGoods02.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ClassiftyGoods02.plist; sourceTree = "<group>"; };
+		826FB0531FF239CA009C275C /* ClassiftyGoods03.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ClassiftyGoods03.plist; sourceTree = "<group>"; };
+		826FB0541FF239CA009C275C /* ClassifyTitles.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ClassifyTitles.plist; sourceTree = "<group>"; };
+		826FB0551FF239CA009C275C /* DetailRecommend.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DetailRecommend.plist; sourceTree = "<group>"; };
+		826FB0561FF239CA009C275C /* FiltrateItem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FiltrateItem.plist; sourceTree = "<group>"; };
+		826FB0571FF239CA009C275C /* FootprintGoods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FootprintGoods.plist; sourceTree = "<group>"; };
+		826FB0581FF239CA009C275C /* shareTerrace.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = shareTerrace.plist; sourceTree = "<group>"; };
+		826FB0591FF239CA009C275C /* ShopItem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ShopItem.plist; sourceTree = "<group>"; };
+		826FB05B1FF239CA009C275C /* CommentPic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CommentPic.plist; sourceTree = "<group>"; };
+		826FB05C1FF239CA009C275C /* DeliveryAdress.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DeliveryAdress.plist; sourceTree = "<group>"; };
+		826FB05D1FF239CA009C275C /* MessageNote.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MessageNote.plist; sourceTree = "<group>"; };
+		826FB05E1FF239CA009C275C /* MyCenterFlow.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
+		826FB05F1FF239CA009C275C /* MyServiceFlow.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
+		826FB0601FF239CA009C275C /* YouLikeGoods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = YouLikeGoods.plist; sourceTree = "<group>"; };
+		826FB0621FF239CA009C275C /* CountDownShop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CountDownShop.plist; sourceTree = "<group>"; };
+		826FB0631FF239CA009C275C /* GoodsGrid.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GoodsGrid.plist; sourceTree = "<group>"; };
+		826FB0641FF239CA009C275C /* HomeHighGoods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomeHighGoods.plist; sourceTree = "<group>"; };
+		826FB0661FF239CA009C275C /* BeautyRecommendShop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BeautyRecommendShop.plist; sourceTree = "<group>"; };
+		826FB0671FF239CA009C275C /* BeautyShop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BeautyShop.plist; sourceTree = "<group>"; };
 		82FF319A1FE26E8B00E67B18 /* JDLQQAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQAppViewController.h; sourceTree = "<group>"; };
 		82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLQQAppViewController.m; sourceTree = "<group>"; };
 		82FF319D1FE277DB00E67B18 /* JDLQQMyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQMyMessageViewController.h; sourceTree = "<group>"; };
@@ -533,6 +569,7 @@
 		8212B4C01FDE1F2400DBCBCF /* Found(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				826FB04B1FF238F6009C275C /* StoreData(电商) */,
 				8212B4CC1FDE269A00DBCBCF /* JDLFoundViewController.h */,
 				8212B4CD1FDE269A00DBCBCF /* JDLFoundViewController.m */,
 			);
@@ -959,6 +996,76 @@
 			path = XLBubbleTransition;
 			sourceTree = "<group>";
 		};
+		826FB04B1FF238F6009C275C /* StoreData(电商) */ = {
+			isa = PBXGroup;
+			children = (
+				826FB04C1FF23960009C275C /* JDLStoreDataManager.h */,
+				826FB04F1FF239CA009C275C /* 分类Plist */,
+				826FB04D1FF239C9009C275C /* 购物车Plist */,
+				826FB0651FF239CA009C275C /* 美店 */,
+				826FB0611FF239CA009C275C /* 首页Plist */,
+				826FB05A1FF239CA009C275C /* 我的Plist */,
+			);
+			path = "StoreData(电商)";
+			sourceTree = "<group>";
+		};
+		826FB04D1FF239C9009C275C /* 购物车Plist */ = {
+			isa = PBXGroup;
+			children = (
+				826FB04E1FF239C9009C275C /* RecommendShop.plist */,
+			);
+			path = "购物车Plist";
+			sourceTree = "<group>";
+		};
+		826FB04F1FF239CA009C275C /* 分类Plist */ = {
+			isa = PBXGroup;
+			children = (
+				826FB0501FF239CA009C275C /* ClasiftyGoods.plist */,
+				826FB0511FF239CA009C275C /* ClassiftyGoods01.plist */,
+				826FB0521FF239CA009C275C /* ClassiftyGoods02.plist */,
+				826FB0531FF239CA009C275C /* ClassiftyGoods03.plist */,
+				826FB0541FF239CA009C275C /* ClassifyTitles.plist */,
+				826FB0551FF239CA009C275C /* DetailRecommend.plist */,
+				826FB0561FF239CA009C275C /* FiltrateItem.plist */,
+				826FB0571FF239CA009C275C /* FootprintGoods.plist */,
+				826FB0581FF239CA009C275C /* shareTerrace.plist */,
+				826FB0591FF239CA009C275C /* ShopItem.plist */,
+			);
+			path = "分类Plist";
+			sourceTree = "<group>";
+		};
+		826FB05A1FF239CA009C275C /* 我的Plist */ = {
+			isa = PBXGroup;
+			children = (
+				826FB05B1FF239CA009C275C /* CommentPic.plist */,
+				826FB05C1FF239CA009C275C /* DeliveryAdress.plist */,
+				826FB05D1FF239CA009C275C /* MessageNote.plist */,
+				826FB05E1FF239CA009C275C /* MyCenterFlow.plist */,
+				826FB05F1FF239CA009C275C /* MyServiceFlow.plist */,
+				826FB0601FF239CA009C275C /* YouLikeGoods.plist */,
+			);
+			path = "我的Plist";
+			sourceTree = "<group>";
+		};
+		826FB0611FF239CA009C275C /* 首页Plist */ = {
+			isa = PBXGroup;
+			children = (
+				826FB0621FF239CA009C275C /* CountDownShop.plist */,
+				826FB0631FF239CA009C275C /* GoodsGrid.plist */,
+				826FB0641FF239CA009C275C /* HomeHighGoods.plist */,
+			);
+			path = "首页Plist";
+			sourceTree = "<group>";
+		};
+		826FB0651FF239CA009C275C /* 美店 */ = {
+			isa = PBXGroup;
+			children = (
+				826FB0661FF239CA009C275C /* BeautyRecommendShop.plist */,
+				826FB0671FF239CA009C275C /* BeautyShop.plist */,
+			);
+			path = "美店";
+			sourceTree = "<group>";
+		};
 		88BB3892BD6F1DA5B50E8C0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1082,9 +1189,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826FB0681FF239EB009C275C /* ClasiftyGoods.plist in Resources */,
+				826FB06F1FF239FC009C275C /* FootprintGoods.plist in Resources */,
+				826FB0741FF23A0A009C275C /* HomeHighGoods.plist in Resources */,
+				826FB06C1FF239F6009C275C /* ClassifyTitles.plist in Resources */,
 				8212B4861FDAD9CE00DBCBCF /* LaunchScreen.storyboard in Resources */,
+				826FB06A1FF239F1009C275C /* ClassiftyGoods02.plist in Resources */,
+				826FB0711FF23A00009C275C /* ShopItem.plist in Resources */,
+				826FB0731FF23A08009C275C /* GoodsGrid.plist in Resources */,
+				826FB0721FF23A05009C275C /* CountDownShop.plist in Resources */,
+				826FB06E1FF239FA009C275C /* FiltrateItem.plist in Resources */,
 				8212B4831FDAD9CE00DBCBCF /* Assets.xcassets in Resources */,
+				826FB0691FF239EF009C275C /* ClassiftyGoods01.plist in Resources */,
+				826FB06D1FF239F8009C275C /* DetailRecommend.plist in Resources */,
+				826FB0701FF239FD009C275C /* shareTerrace.plist in Resources */,
 				8212B4811FDAD9CE00DBCBCF /* Main.storyboard in Resources */,
+				826FB06B1FF239F3009C275C /* ClassiftyGoods03.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

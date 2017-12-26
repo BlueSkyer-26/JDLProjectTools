@@ -41,6 +41,7 @@
 
 #pragma mark ------ BaseConfiguration -------
 #import "JDLProjectConfiguration.h"
+#import "JDLStoreDataManager.h"    //电商数据和class
 
 #pragma mark ------ Manager -------
 //#import "ZBNetworking.h"                      //带有缓存功能的网络请求
