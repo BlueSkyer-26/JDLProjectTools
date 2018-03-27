@@ -114,6 +114,7 @@
 		826FB0741FF23A0A009C275C /* HomeHighGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FB0641FF239CA009C275C /* HomeHighGoods.plist */; };
 		82FF319C1FE26E8B00E67B18 /* JDLQQAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */; };
 		82FF319F1FE277DB00E67B18 /* JDLQQMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */; };
+		8455E407206A2E60002C931C /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455E405206A2E5F002C931C /* NSDictionary+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,6 +356,8 @@
 		82FF319B1FE26E8B00E67B18 /* JDLQQAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLQQAppViewController.m; sourceTree = "<group>"; };
 		82FF319D1FE277DB00E67B18 /* JDLQQMyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLQQMyMessageViewController.h; sourceTree = "<group>"; };
 		82FF319E1FE277DB00E67B18 /* JDLQQMyMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLQQMyMessageViewController.m; sourceTree = "<group>"; };
+		8455E405206A2E5F002C931C /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		8455E406206A2E5F002C931C /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -840,6 +843,8 @@
 		826FAFD01FE7B8EE009C275C /* JDLLogText(转码输出中文) */ = {
 			isa = PBXGroup;
 			children = (
+				8455E406206A2E5F002C931C /* NSDictionary+Log.h */,
+				8455E405206A2E5F002C931C /* NSDictionary+Log.m */,
 				826FAFD11FE7B91E009C275C /* Foundation+Log.m */,
 			);
 			path = "JDLLogText(转码输出中文)";
@@ -1311,6 +1316,7 @@
 				824960FE1FE13D0D004DF289 /* JDLAlipayAntForestViewController.m in Sources */,
 				824960E21FE11167004DF289 /* JDLNavigationTabBarController.m in Sources */,
 				826FAFC81FE7A87A009C275C /* ZBCacheManager.m in Sources */,
+				8455E407206A2E60002C931C /* NSDictionary+Log.m in Sources */,
 				820DA6081FE75DB400F9C55B /* JDLCustomBgImageViewController.m in Sources */,
 				826FAFA21FE78735009C275C /* JDLMusicViewController.m in Sources */,
 				826FAFFE1FEB60B1009C275C /* JDLProgressView.m in Sources */,
